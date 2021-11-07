@@ -26052,7 +26052,7 @@ const Home = ()=>{
                                         __self: undefined,
                                         children: [
                                             "Senior Web Engineer & Software Developer from",
-                                            /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.MapMaker, {
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.MapMaker, {
                                                 className: "text-primary fill-current w-4 h-4 sm:w-10 sm:h-10",
                                                 style: {
                                                     display: 'inline'
@@ -26064,7 +26064,7 @@ const Home = ()=>{
                                                 __self: undefined
                                             }),
                                             "Medell\xedn,",
-                                            /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.FlagCO, {
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.FlagCO, {
                                                 className: "mx-1 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10  inline",
                                                 __source: {
                                                     fileName: "src/pages/Home.js",
@@ -33017,7 +33017,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>_buttonDefault.default
 );
-parcelHelpers.export(exports, "Icons", ()=>_icons
+parcelHelpers.export(exports, "Icon", ()=>_iconDefault.default
 );
 parcelHelpers.export(exports, "Mapa", ()=>_mapaDefault.default
 );
@@ -33033,7 +33033,8 @@ var _button = require("./Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 var _mapa = require("./Mapa");
 var _mapaDefault = parcelHelpers.interopDefault(_mapa);
-var _icons = require("./Icons");
+var _icon = require("./Icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
 var _themeSelector = require("./ThemeSelector");
 var _themeSelectorDefault = parcelHelpers.interopDefault(_themeSelector);
 var _snap = require("./Snap");
@@ -33042,7 +33043,7 @@ var _timelineDefault = parcelHelpers.interopDefault(_timeline);
 var _navigation = require("./Navigation");
 var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 
-},{"./Button":"ipx9m","./Mapa":"8m5c1","./Icons":"aQI7v","./ThemeSelector":"B4SMB","./Snap":"lRsAI","./Timeline":"8HPsV","./Navigation":"d7lnP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ipx9m":[function(require,module,exports) {
+},{"./Button":"ipx9m","./Mapa":"8m5c1","./ThemeSelector":"B4SMB","./Snap":"lRsAI","./Timeline":"8HPsV","./Navigation":"d7lnP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./Icon":"g6AW9"}],"ipx9m":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$efb6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -44884,1893 +44885,7 @@ $RefreshReg$(_c, "MapaProvider");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"aQI7v":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7ae6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7ae6.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Adobe", ()=>Adobe
-);
-parcelHelpers.export(exports, "Angular", ()=>Angular
-);
-parcelHelpers.export(exports, "AntDesign", ()=>AntDesign
-);
-parcelHelpers.export(exports, "Apache", ()=>Apache
-);
-parcelHelpers.export(exports, "Apple", ()=>Apple
-);
-parcelHelpers.export(exports, "Atlassian", ()=>Atlassian
-);
-parcelHelpers.export(exports, "Bash", ()=>Bash
-);
-parcelHelpers.export(exports, "Bootstrap", ()=>Bootstrap
-);
-parcelHelpers.export(exports, "Brightness", ()=>Brightness
-);
-parcelHelpers.export(exports, "Bulma", ()=>Bulma
-);
-parcelHelpers.export(exports, "Caddy", ()=>Caddy
-);
-parcelHelpers.export(exports, "Cellphone", ()=>Cellphone
-);
-parcelHelpers.export(exports, "Chakra", ()=>Chakra
-);
-parcelHelpers.export(exports, "CICD", ()=>CICD
-);
-parcelHelpers.export(exports, "Cloud", ()=>Cloud
-);
-parcelHelpers.export(exports, "Cockpit", ()=>Cockpit
-);
-parcelHelpers.export(exports, "Contentful", ()=>Contentful
-);
-parcelHelpers.export(exports, "CouchDB", ()=>CouchDB
-);
-parcelHelpers.export(exports, "DartLogo", ()=>DartLogo
-);
-parcelHelpers.export(exports, "DemandFrontier", ()=>DemandFrontier
-);
-parcelHelpers.export(exports, "DesktopMobile", ()=>DesktopMobile
-);
-parcelHelpers.export(exports, "Directus", ()=>Directus
-);
-parcelHelpers.export(exports, "Docker", ()=>Docker
-);
-parcelHelpers.export(exports, "Drive", ()=>Drive
-);
-parcelHelpers.export(exports, "EAFIT", ()=>EAFIT
-);
-parcelHelpers.export(exports, "Element", ()=>Element
-);
-parcelHelpers.export(exports, "Express", ()=>Express
-);
-parcelHelpers.export(exports, "Firebase", ()=>Firebase
-);
-parcelHelpers.export(exports, "FlagCO", ()=>FlagCO
-);
-parcelHelpers.export(exports, "Flask", ()=>Flask
-);
-parcelHelpers.export(exports, "Flutter", ()=>Flutter
-);
-parcelHelpers.export(exports, "Foundation", ()=>Foundation
-);
-parcelHelpers.export(exports, "Gatsby", ()=>Gatsby
-);
-parcelHelpers.export(exports, "Git", ()=>Git
-);
-parcelHelpers.export(exports, "GitHub", ()=>GitHub
-);
-parcelHelpers.export(exports, "Globant", ()=>Globant
-);
-parcelHelpers.export(exports, "Gmail", ()=>Gmail
-);
-parcelHelpers.export(exports, "Go", ()=>Go
-);
-parcelHelpers.export(exports, "Golang", ()=>Golang
-);
-parcelHelpers.export(exports, "GraphCMS", ()=>GraphCMS
-);
-parcelHelpers.export(exports, "GraphQL", ()=>GraphQL
-);
-parcelHelpers.export(exports, "Haskell", ()=>Haskell
-);
-parcelHelpers.export(exports, "HTML", ()=>HTML
-);
-parcelHelpers.export(exports, "HUGE", ()=>HUGE
-);
-parcelHelpers.export(exports, "Instagram", ()=>Instagram
-);
-parcelHelpers.export(exports, "Ionic", ()=>Ionic
-);
-parcelHelpers.export(exports, "Java", ()=>Java
-);
-parcelHelpers.export(exports, "JSON", ()=>JSON
-);
-parcelHelpers.export(exports, "Kotlin", ()=>Kotlin
-);
-parcelHelpers.export(exports, "Kubernetes", ()=>Kubernetes
-);
-parcelHelpers.export(exports, "Laravel", ()=>Laravel
-);
-parcelHelpers.export(exports, "LinkedIn", ()=>LinkedIn
-);
-parcelHelpers.export(exports, "Linux", ()=>Linux
-);
-parcelHelpers.export(exports, "Logo", ()=>Logo
-);
-parcelHelpers.export(exports, "MapMaker", ()=>MapMaker
-);
-parcelHelpers.export(exports, "MaterialUI", ()=>MaterialUI
-);
-parcelHelpers.export(exports, "MongoDB", ()=>MongoDB
-);
-parcelHelpers.export(exports, "MonitorCellphoneStar", ()=>MonitorCellphoneStar
-);
-parcelHelpers.export(exports, "MySQL", ()=>MySQL
-);
-parcelHelpers.export(exports, "NextJS", ()=>NextJS
-);
-parcelHelpers.export(exports, "NGINX", ()=>NGINX
-);
-parcelHelpers.export(exports, "NodeJS", ()=>NodeJS
-);
-parcelHelpers.export(exports, "Nuxt", ()=>Nuxt
-);
-parcelHelpers.export(exports, "Parse", ()=>Parse
-);
-parcelHelpers.export(exports, "PHP", ()=>PHP
-);
-parcelHelpers.export(exports, "PostgreSQL", ()=>PostgreSQL
-);
-parcelHelpers.export(exports, "Prismic", ()=>Prismic
-);
-parcelHelpers.export(exports, "PWA", ()=>PWA
-);
-parcelHelpers.export(exports, "Python", ()=>Python
-);
-parcelHelpers.export(exports, "Question", ()=>Question
-);
-parcelHelpers.export(exports, "RaspberryPi", ()=>RaspberryPi
-);
-parcelHelpers.export(exports, "React", ()=>ReactLogo
-);
-parcelHelpers.export(exports, "Redis", ()=>Redis
-);
-parcelHelpers.export(exports, "REST", ()=>REST
-);
-parcelHelpers.export(exports, "RethinkDB", ()=>RethinkDB
-);
-parcelHelpers.export(exports, "Rust", ()=>Rust
-);
-parcelHelpers.export(exports, "Sass", ()=>Sass
-);
-parcelHelpers.export(exports, "Sketch", ()=>Sketch
-);
-parcelHelpers.export(exports, "Star", ()=>Star
-);
-parcelHelpers.export(exports, "Strapi", ()=>Strapi
-);
-parcelHelpers.export(exports, "SystemBrightness", ()=>SystemBrightness
-);
-parcelHelpers.export(exports, "Tailwind", ()=>Tailwind
-);
-parcelHelpers.export(exports, "Twitter", ()=>Twitter
-);
-parcelHelpers.export(exports, "Vue", ()=>Vue
-);
-parcelHelpers.export(exports, "Wagtail", ()=>Wagtail
-);
-parcelHelpers.export(exports, "Web", ()=>Web
-);
-parcelHelpers.export(exports, "Wordpress", ()=>Wordpress
-);
-var _jsxRuntime = require("react/jsx-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _iconsSvg = require("../../public/icons.svg");
-var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
-const LinkedIn = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 4
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#linked-in`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 5
-            },
-            __self: undefined
-        })
-    })
-;
-_c1 = LinkedIn;
-const GitHub = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 8
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#github`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 9
-            },
-            __self: undefined
-        })
-    })
-;
-_c2 = GitHub;
-const Twitter = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 12
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#twitter`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 13
-            },
-            __self: undefined
-        })
-    })
-;
-_c3 = Twitter;
-const Instagram = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 16
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#instagram`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 17
-            },
-            __self: undefined
-        })
-    })
-;
-_c4 = Instagram;
-const Gmail = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 20
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#gmail`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 21
-            },
-            __self: undefined
-        })
-    })
-;
-_c5 = Gmail;
-const MapMaker = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 24
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#map-maker`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 25
-            },
-            __self: undefined
-        })
-    })
-;
-_c6 = MapMaker;
-const FlagCO = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 28
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#flag-co`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 29
-            },
-            __self: undefined
-        })
-    })
-;
-_c7 = FlagCO;
-const Logo = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 32
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#logo`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 33
-            },
-            __self: undefined
-        })
-    })
-;
-_c8 = Logo;
-const Brightness = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 36
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#brightness`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 37
-            },
-            __self: undefined
-        })
-    })
-;
-_c9 = Brightness;
-const SystemBrightness = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 40
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#system-brightness`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 41
-            },
-            __self: undefined
-        })
-    })
-;
-_c10 = SystemBrightness;
-const Web = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 44
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#web`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 45
-            },
-            __self: undefined
-        })
-    })
-;
-_c11 = Web;
-const DesktopMobile = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 48
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#desktop-mobile`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 49
-            },
-            __self: undefined
-        })
-    })
-;
-_c12 = DesktopMobile;
-const Cellphone = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 52
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#cellphone`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 53
-            },
-            __self: undefined
-        })
-    })
-;
-_c13 = Cellphone;
-const MonitorCellphoneStar = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 56
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#monitor-cellphone-star`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 57
-            },
-            __self: undefined
-        })
-    })
-;
-_c14 = MonitorCellphoneStar;
-const NodeJS = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 60
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#node-js`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 61
-            },
-            __self: undefined
-        })
-    })
-;
-_c15 = NodeJS;
-const DartLogo = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 64
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#dart`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 65
-            },
-            __self: undefined
-        })
-    })
-;
-_c16 = DartLogo;
-const Python = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 68
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#python`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 69
-            },
-            __self: undefined
-        })
-    })
-;
-_c17 = Python;
-const Golang = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 72
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#golang`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 73
-            },
-            __self: undefined
-        })
-    })
-;
-_c18 = Golang;
-const Go = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 76
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#go`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 77
-            },
-            __self: undefined
-        })
-    })
-;
-_c19 = Go;
-const Kotlin = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 80
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#kotlin`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 81
-            },
-            __self: undefined
-        })
-    })
-;
-_c20 = Kotlin;
-const PHP = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 84
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#php`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 85
-            },
-            __self: undefined
-        })
-    })
-;
-_c21 = PHP;
-const Bash = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 88
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#bash`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 89
-            },
-            __self: undefined
-        })
-    })
-;
-_c22 = Bash;
-const ReactLogo = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 92
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#react`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 93
-            },
-            __self: undefined
-        })
-    })
-;
-_c23 = ReactLogo;
-const Vue = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 96
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#vue`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 97
-            },
-            __self: undefined
-        })
-    })
-;
-_c24 = Vue;
-const Flutter = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 100
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#flutter`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 101
-            },
-            __self: undefined
-        })
-    })
-;
-_c25 = Flutter;
-const Angular = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 104
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#angular`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 105
-            },
-            __self: undefined
-        })
-    })
-;
-_c26 = Angular;
-const Ionic = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 108
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#ionic`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 109
-            },
-            __self: undefined
-        })
-    })
-;
-_c27 = Ionic;
-const Tailwind = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 112
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#tailwind`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 113
-            },
-            __self: undefined
-        })
-    })
-;
-_c28 = Tailwind;
-const Bootstrap = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 116
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#bootstrap`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 117
-            },
-            __self: undefined
-        })
-    })
-;
-_c29 = Bootstrap;
-const AntDesign = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 120
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#ant-design`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 121
-            },
-            __self: undefined
-        })
-    })
-;
-_c30 = AntDesign;
-const MaterialUI = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 124
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#material-ui`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 125
-            },
-            __self: undefined
-        })
-    })
-;
-_c31 = MaterialUI;
-const Bulma = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 128
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#bulma`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 129
-            },
-            __self: undefined
-        })
-    })
-;
-_c32 = Bulma;
-const GraphQL = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 132
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#graphql`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 133
-            },
-            __self: undefined
-        })
-    })
-;
-_c33 = GraphQL;
-const Foundation = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 136
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#foundation`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 137
-            },
-            __self: undefined
-        })
-    })
-;
-_c34 = Foundation;
-const Element = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 140
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#element`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 141
-            },
-            __self: undefined
-        })
-    })
-;
-_c35 = Element;
-const REST = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 144
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#rest`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 145
-            },
-            __self: undefined
-        })
-    })
-;
-_c36 = REST;
-const MongoDB = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 148
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#mongodb`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 149
-            },
-            __self: undefined
-        })
-    })
-;
-_c37 = MongoDB;
-const MySQL = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 152
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#mysql`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 153
-            },
-            __self: undefined
-        })
-    })
-;
-_c38 = MySQL;
-const RethinkDB = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 156
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#rethinkdb`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 157
-            },
-            __self: undefined
-        })
-    })
-;
-_c39 = RethinkDB;
-const PostgreSQL = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 160
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#postgresql`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 161
-            },
-            __self: undefined
-        })
-    })
-;
-_c40 = PostgreSQL;
-const CouchDB = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 164
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#couchdb`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 165
-            },
-            __self: undefined
-        })
-    })
-;
-_c41 = CouchDB;
-const Redis = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 168
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#redis`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 169
-            },
-            __self: undefined
-        })
-    })
-;
-_c42 = Redis;
-const Express = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 172
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#express`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 173
-            },
-            __self: undefined
-        })
-    })
-;
-_c43 = Express;
-const Flask = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 176
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#flask`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 177
-            },
-            __self: undefined
-        })
-    })
-;
-_c44 = Flask;
-const Laravel = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 180
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#laravel`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 181
-            },
-            __self: undefined
-        })
-    })
-;
-_c45 = Laravel;
-const Java = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 184
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#java`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 185
-            },
-            __self: undefined
-        })
-    })
-;
-_c46 = Java;
-const NextJS = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 188
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#nextjs`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 189
-            },
-            __self: undefined
-        })
-    })
-;
-_c47 = NextJS;
-const HTML = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 192
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#html`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 193
-            },
-            __self: undefined
-        })
-    })
-;
-_c48 = HTML;
-const Sass = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 196
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#sass`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 197
-            },
-            __self: undefined
-        })
-    })
-;
-_c49 = Sass;
-const JSON = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 200
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#json`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 201
-            },
-            __self: undefined
-        })
-    })
-;
-_c50 = JSON;
-const PWA = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 204
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#pwa`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 205
-            },
-            __self: undefined
-        })
-    })
-;
-_c51 = PWA;
-const Git = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 208
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#git`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 209
-            },
-            __self: undefined
-        })
-    })
-;
-_c52 = Git;
-const Sketch = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 212
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#sketch`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 213
-            },
-            __self: undefined
-        })
-    })
-;
-_c53 = Sketch;
-const Adobe = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 216
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#adobe`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 217
-            },
-            __self: undefined
-        })
-    })
-;
-_c54 = Adobe;
-const Drive = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 220
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#drive`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 221
-            },
-            __self: undefined
-        })
-    })
-;
-_c55 = Drive;
-const Atlassian = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 224
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#atlassian`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 225
-            },
-            __self: undefined
-        })
-    })
-;
-_c56 = Atlassian;
-const Linux = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 228
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#linux`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 229
-            },
-            __self: undefined
-        })
-    })
-;
-_c57 = Linux;
-const Docker = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 232
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#docker`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 233
-            },
-            __self: undefined
-        })
-    })
-;
-_c58 = Docker;
-const NGINX = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 236
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#nginx`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 237
-            },
-            __self: undefined
-        })
-    })
-;
-_c59 = NGINX;
-const CICD = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 240
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#ci-cd`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 241
-            },
-            __self: undefined
-        })
-    })
-;
-_c60 = CICD;
-const Apple = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 244
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#apple`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 245
-            },
-            __self: undefined
-        })
-    })
-;
-_c61 = Apple;
-const Apache = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 248
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#apache`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 249
-            },
-            __self: undefined
-        })
-    })
-;
-_c62 = Apache;
-const RaspberryPi = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 252
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#raspberry-pi`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 253
-            },
-            __self: undefined
-        })
-    })
-;
-_c63 = RaspberryPi;
-const Caddy = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 256
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#caddy`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 257
-            },
-            __self: undefined
-        })
-    })
-;
-_c64 = Caddy;
-const Kubernetes = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 260
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#kubernetes`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 261
-            },
-            __self: undefined
-        })
-    })
-;
-_c65 = Kubernetes;
-const Rust = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 264
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#rust`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 265
-            },
-            __self: undefined
-        })
-    })
-;
-_c66 = Rust;
-const Cloud = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 268
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#cloud`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 269
-            },
-            __self: undefined
-        })
-    })
-;
-_c67 = Cloud;
-const Strapi = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 272
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#strapi`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 273
-            },
-            __self: undefined
-        })
-    })
-;
-_c68 = Strapi;
-const Contentful = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 276
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#contentful`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 277
-            },
-            __self: undefined
-        })
-    })
-;
-_c69 = Contentful;
-const Directus = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 280
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#directus`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 281
-            },
-            __self: undefined
-        })
-    })
-;
-_c70 = Directus;
-const Firebase = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 284
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#firebase`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 285
-            },
-            __self: undefined
-        })
-    })
-;
-_c71 = Firebase;
-const Parse = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 288
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#parse`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 289
-            },
-            __self: undefined
-        })
-    })
-;
-_c72 = Parse;
-const Cockpit = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 292
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#cockpit`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 293
-            },
-            __self: undefined
-        })
-    })
-;
-_c73 = Cockpit;
-const Prismic = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 296
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#prismic`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 297
-            },
-            __self: undefined
-        })
-    })
-;
-_c74 = Prismic;
-const Wordpress = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 300
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#wordpress`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 301
-            },
-            __self: undefined
-        })
-    })
-;
-_c75 = Wordpress;
-const Wagtail = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 304
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#wagtail`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 305
-            },
-            __self: undefined
-        })
-    })
-;
-_c76 = Wagtail;
-const GraphCMS = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 308
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#graphcms`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 309
-            },
-            __self: undefined
-        })
-    })
-;
-_c77 = GraphCMS;
-const Gatsby = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 312
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#gatsby`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 313
-            },
-            __self: undefined
-        })
-    })
-;
-_c78 = Gatsby;
-const Nuxt = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 316
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#nuxt`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 317
-            },
-            __self: undefined
-        })
-    })
-;
-_c79 = Nuxt;
-const Haskell = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 320
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#haskell`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 321
-            },
-            __self: undefined
-        })
-    })
-;
-_c80 = Haskell;
-const HUGE = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 324
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#huge`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 325
-            },
-            __self: undefined
-        })
-    })
-;
-_c81 = HUGE;
-const Globant = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 328
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#globant`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 329
-            },
-            __self: undefined
-        })
-    })
-;
-_c82 = Globant;
-const DemandFrontier = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 332
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#demand-frontier`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 333
-            },
-            __self: undefined
-        })
-    })
-;
-_c83 = DemandFrontier;
-const EAFIT = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 336
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#eafit`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 337
-            },
-            __self: undefined
-        })
-    })
-;
-_c84 = EAFIT;
-const Star = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 340
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#star`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 341
-            },
-            __self: undefined
-        })
-    })
-;
-_c85 = Star;
-const Question = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 344
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#question`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 345
-            },
-            __self: undefined
-        })
-    })
-;
-_c86 = Question;
-const Chakra = (props)=>/*#__PURE__*/ _jsxRuntime.jsx("svg", {
-        ...props,
-        __source: {
-            fileName: "src/components/Icons.tsx",
-            lineNumber: 348
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
-            xlinkHref: `${_iconsSvgDefault.default}#chakra`,
-            __source: {
-                fileName: "src/components/Icons.tsx",
-                lineNumber: 349
-            },
-            __self: undefined
-        })
-    })
-;
-_c87 = Chakra;
-var _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20, _c21, _c22, _c23, _c24, _c25, _c26, _c27, _c28, _c29, _c30, _c31, _c32, _c33, _c34, _c35, _c36, _c37, _c38, _c39, _c40, _c41, _c42, _c43, _c44, _c45, _c46, _c47, _c48, _c49, _c50, _c51, _c52, _c53, _c54, _c55, _c56, _c57, _c58, _c59, _c60, _c61, _c62, _c63, _c64, _c65, _c66, _c67, _c68, _c69, _c70, _c71, _c72, _c73, _c74, _c75, _c76, _c77, _c78, _c79, _c80, _c81, _c82, _c83, _c84, _c85, _c86, _c87;
-$RefreshReg$(_c1, "LinkedIn");
-$RefreshReg$(_c2, "GitHub");
-$RefreshReg$(_c3, "Twitter");
-$RefreshReg$(_c4, "Instagram");
-$RefreshReg$(_c5, "Gmail");
-$RefreshReg$(_c6, "MapMaker");
-$RefreshReg$(_c7, "FlagCO");
-$RefreshReg$(_c8, "Logo");
-$RefreshReg$(_c9, "Brightness");
-$RefreshReg$(_c10, "SystemBrightness");
-$RefreshReg$(_c11, "Web");
-$RefreshReg$(_c12, "DesktopMobile");
-$RefreshReg$(_c13, "Cellphone");
-$RefreshReg$(_c14, "MonitorCellphoneStar");
-$RefreshReg$(_c15, "NodeJS");
-$RefreshReg$(_c16, "DartLogo");
-$RefreshReg$(_c17, "Python");
-$RefreshReg$(_c18, "Golang");
-$RefreshReg$(_c19, "Go");
-$RefreshReg$(_c20, "Kotlin");
-$RefreshReg$(_c21, "PHP");
-$RefreshReg$(_c22, "Bash");
-$RefreshReg$(_c23, "ReactLogo");
-$RefreshReg$(_c24, "Vue");
-$RefreshReg$(_c25, "Flutter");
-$RefreshReg$(_c26, "Angular");
-$RefreshReg$(_c27, "Ionic");
-$RefreshReg$(_c28, "Tailwind");
-$RefreshReg$(_c29, "Bootstrap");
-$RefreshReg$(_c30, "AntDesign");
-$RefreshReg$(_c31, "MaterialUI");
-$RefreshReg$(_c32, "Bulma");
-$RefreshReg$(_c33, "GraphQL");
-$RefreshReg$(_c34, "Foundation");
-$RefreshReg$(_c35, "Element");
-$RefreshReg$(_c36, "REST");
-$RefreshReg$(_c37, "MongoDB");
-$RefreshReg$(_c38, "MySQL");
-$RefreshReg$(_c39, "RethinkDB");
-$RefreshReg$(_c40, "PostgreSQL");
-$RefreshReg$(_c41, "CouchDB");
-$RefreshReg$(_c42, "Redis");
-$RefreshReg$(_c43, "Express");
-$RefreshReg$(_c44, "Flask");
-$RefreshReg$(_c45, "Laravel");
-$RefreshReg$(_c46, "Java");
-$RefreshReg$(_c47, "NextJS");
-$RefreshReg$(_c48, "HTML");
-$RefreshReg$(_c49, "Sass");
-$RefreshReg$(_c50, "JSON");
-$RefreshReg$(_c51, "PWA");
-$RefreshReg$(_c52, "Git");
-$RefreshReg$(_c53, "Sketch");
-$RefreshReg$(_c54, "Adobe");
-$RefreshReg$(_c55, "Drive");
-$RefreshReg$(_c56, "Atlassian");
-$RefreshReg$(_c57, "Linux");
-$RefreshReg$(_c58, "Docker");
-$RefreshReg$(_c59, "NGINX");
-$RefreshReg$(_c60, "CICD");
-$RefreshReg$(_c61, "Apple");
-$RefreshReg$(_c62, "Apache");
-$RefreshReg$(_c63, "RaspberryPi");
-$RefreshReg$(_c64, "Caddy");
-$RefreshReg$(_c65, "Kubernetes");
-$RefreshReg$(_c66, "Rust");
-$RefreshReg$(_c67, "Cloud");
-$RefreshReg$(_c68, "Strapi");
-$RefreshReg$(_c69, "Contentful");
-$RefreshReg$(_c70, "Directus");
-$RefreshReg$(_c71, "Firebase");
-$RefreshReg$(_c72, "Parse");
-$RefreshReg$(_c73, "Cockpit");
-$RefreshReg$(_c74, "Prismic");
-$RefreshReg$(_c75, "Wordpress");
-$RefreshReg$(_c76, "Wagtail");
-$RefreshReg$(_c77, "GraphCMS");
-$RefreshReg$(_c78, "Gatsby");
-$RefreshReg$(_c79, "Nuxt");
-$RefreshReg$(_c80, "Haskell");
-$RefreshReg$(_c81, "HUGE");
-$RefreshReg$(_c82, "Globant");
-$RefreshReg$(_c83, "DemandFrontier");
-$RefreshReg$(_c84, "EAFIT");
-$RefreshReg$(_c85, "Star");
-$RefreshReg$(_c86, "Question");
-$RefreshReg$(_c87, "Chakra");
-
-  $parcel$ReactRefreshHelpers$7ae6.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../public/icons.svg":"kBb0c"}],"kBb0c":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('k0Tzb') + "icons.c84bebe9.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
-"use strict";
-var bundleURL = {
-};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"B4SMB":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"B4SMB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7ea1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -46839,7 +44954,7 @@ function ThemeSelector({ className , ...props }) {
                     " theme"
                 ]
             }),
-            source === 'system' && /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.SystemBrightness, {
+            source === 'system' && /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.SystemBrightness, {
                 width: "26",
                 height: "26",
                 className: "fill-current",
@@ -46849,7 +44964,7 @@ function ThemeSelector({ className , ...props }) {
                 },
                 __self: this
             }),
-            source !== 'system' && /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.Brightness, {
+            source !== 'system' && /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.Brightness, {
                 width: "26",
                 height: "26",
                 className: "fill-current",
@@ -47018,7 +45133,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _classnames = require("classnames");
 var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
-var _icons = require("./Icons");
+var _icon = require("./Icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
 const TimelineChip = ({ position , text , children , className  } = {
     position: 'left',
     text: '',
@@ -47125,7 +45241,8 @@ const Timeline = (props)=>{
                         position: "top",
                         text: "Future",
                         className: "bg-gray-800 justify-center text-gray-400",
-                        children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.Question, {
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                            icon: "Question",
                             className: "fill-current w-2/3",
                             role: "img",
                             "aria-label": "Future"
@@ -47164,7 +45281,8 @@ const Timeline = (props)=>{
                                 lineNumber: 71
                             },
                             __self: undefined,
-                            children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.HUGE, {
+                            children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                                icon: "HUGE",
                                 className: "fill-current h-16 max-w-full",
                                 role: "img",
                                 "aria-label": "HUGE",
@@ -47220,7 +45338,8 @@ const Timeline = (props)=>{
                                 lineNumber: 84
                             },
                             __self: undefined,
-                            children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.Globant, {
+                            children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                                icon: "Globant",
                                 className: "fill-current h-16 max-w-full",
                                 role: "img",
                                 "aria-label": "Globant",
@@ -47277,7 +45396,8 @@ const Timeline = (props)=>{
                                 lineNumber: 97
                             },
                             __self: undefined,
-                            children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.DemandFrontier, {
+                            children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                                icon: "DemandFrontier",
                                 className: "fill-current h-16 max-w-full",
                                 role: "img",
                                 "aria-label": "Demand Frontier",
@@ -47333,7 +45453,8 @@ const Timeline = (props)=>{
                                 lineNumber: 110
                             },
                             __self: undefined,
-                            children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.EAFIT, {
+                            children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                                icon: "EAFIT",
                                 className: "fill-current h-16 max-w-full",
                                 role: "img",
                                 "aria-label": "Universidad EAFIT",
@@ -47368,7 +45489,8 @@ const Timeline = (props)=>{
                         position: "bottom",
                         text: "Born",
                         className: "bg-gray-800 justify-center text-yellow-300",
-                        children: /*#__PURE__*/ _jsxRuntime.jsx(_icons.Star, {
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                            icon: "Star",
                             className: "fill-current w-2/3",
                             role: "img",
                             "aria-label": "Born"
@@ -47396,7 +45518,192 @@ $RefreshReg$(_c3, "Timeline");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","classnames":"2cVcN","./Icons":"aQI7v","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"d7lnP":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","classnames":"2cVcN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","./Icon":"g6AW9"}],"g6AW9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$acd5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$acd5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _iconsSvg = require("../../public/icons.svg");
+var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
+const IconsData = {
+    Adobe: "adobe",
+    Angular: "angular",
+    AntDesign: "ant-design",
+    Apache: "apache",
+    Apple: "apple",
+    Atlassian: "atlassian",
+    Bash: "bash",
+    Bootstrap: "bootstrap",
+    Brightness: "brightness",
+    Bulma: "bulma",
+    Caddy: "caddy",
+    Cellphone: "cellphone",
+    Chakra: "chakra",
+    CICD: "ci-cd",
+    Cloud: "cloud",
+    Cockpit: "cockpit",
+    Contentful: "contentful",
+    CouchDB: "couchdb",
+    DartLogo: "dart",
+    DemandFrontier: "demand-frontier",
+    DesktopMobile: "desktop-mobile",
+    Directus: "directus",
+    Docker: "docker",
+    Drive: "drive",
+    EAFIT: "eafit",
+    Element: "element",
+    Express: "express",
+    Firebase: "firebase",
+    FlagCO: "flag-co",
+    Flask: "flask",
+    Flutter: "flutter",
+    Foundation: "foundation",
+    Gatsby: "gatsby",
+    Git: "git",
+    GitHub: "github",
+    Globant: "globant",
+    Gmail: "gmail",
+    Go: "go",
+    Golang: "golang",
+    GraphCMS: "graphcms",
+    GraphQL: "graphql",
+    Haskell: "haskell",
+    HTML: "html",
+    HUGE: "huge",
+    Instagram: "instagram",
+    Ionic: "ionic",
+    Java: "java",
+    JSON: "json",
+    Kotlin: "kotlin",
+    Kubernetes: "kubernetes",
+    Laravel: "laravel",
+    LinkedIn: "linked-in",
+    Linux: "linux",
+    Logo: "logo",
+    MapMaker: "map-maker",
+    MaterialUI: "material-ui",
+    MongoDB: "mongodb",
+    MonitorCellphoneStar: "monitor-cellphone-star",
+    MySQL: "mysql",
+    NextJS: "nextjs",
+    NGINX: "nginx",
+    NodeJS: "node-js",
+    Nuxt: "nuxt",
+    Parse: "parse",
+    PHP: "php",
+    PostgreSQL: "postgresql",
+    Prismic: "prismic",
+    PWA: "pwa",
+    Python: "python",
+    Question: "question",
+    RaspberryPi: "raspberry-pi",
+    React: "react",
+    Redis: "redis",
+    REST: "rest",
+    RethinkDB: "rethinkdb",
+    Rust: "rust",
+    Sass: "sass",
+    Sketch: "sketch",
+    Star: "star",
+    Strapi: "strapi",
+    SystemBrightness: "system-brightness",
+    Tailwind: "tailwind",
+    Twitter: "twitter",
+    Vue: "vue",
+    Wagtail: "wagtail",
+    Web: "web",
+    Wordpress: "wordpress"
+};
+const Icon = ({ icon , ...props })=>{
+    const path = IconsData[icon];
+    return(/*#__PURE__*/ _jsxRuntime.jsx("svg", {
+        ...props,
+        __source: {
+            fileName: "src/components/Icon.tsx",
+            lineNumber: 103
+        },
+        __self: undefined,
+        children: /*#__PURE__*/ _jsxRuntime.jsx("use", {
+            xlinkHref: `${_iconsSvgDefault.default}#${path}`,
+            __source: {
+                fileName: "src/components/Icon.tsx",
+                lineNumber: 104
+            },
+            __self: undefined
+        })
+    }));
+};
+_c = Icon;
+const IconProxy = new Proxy(Icon, {
+    get (target, prop, receiver) {
+        if (IconsData[prop]) return (props)=>/*#__PURE__*/ _jsxRuntime.jsx(Icon, {
+                icon: prop,
+                ...props,
+                __source: {
+                    fileName: "src/components/Icon.tsx",
+                    lineNumber: 112
+                },
+                __self: this
+            })
+        ;
+        else return Reflect.get(target, prop, receiver);
+    }
+});
+exports.default = IconProxy;
+var _c;
+$RefreshReg$(_c, "Icon");
+
+  $parcel$ReactRefreshHelpers$acd5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../../public/icons.svg":"kBb0c","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"kBb0c":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('k0Tzb') + "icons.c84bebe9.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
+"use strict";
+var bundleURL = {
+};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"d7lnP":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3593 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -47409,7 +45716,8 @@ var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _icons = require("./Icons");
+var _icon = require("./Icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
 var _themeSelector = require("./ThemeSelector");
 var _themeSelectorDefault = parcelHelpers.interopDefault(_themeSelector);
 var _classnames = require("classnames");
@@ -47434,7 +45742,8 @@ const Navigation = ({ obscured  })=>{
                 },
                 __self: undefined,
                 children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx(_icons.Logo, {
+                    /*#__PURE__*/ _jsxRuntime.jsx(_iconDefault.default, {
+                        icon: "Logo",
                         width: "40",
                         height: 40,
                         className: "fill-current text-primary opacity-90 dark:opacity-50",
@@ -47476,7 +45785,7 @@ $RefreshReg$(_c, "Navigation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"etVME","./Icons":"aQI7v","./ThemeSelector":"B4SMB","classnames":"2cVcN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"cORDf":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"etVME","./ThemeSelector":"B4SMB","classnames":"2cVcN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","./Icon":"g6AW9"}],"cORDf":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8df7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -47497,25 +45806,25 @@ exports.default = {
                 title: 'Web Development',
                 className: 'bg-gradient-to-tr from-blue-700 to-blue-900',
                 copy: 'Sequi perspiciatis voluptatibus in dolorem et autem qui veniam aperiam. Doloremque quo repellendus reprehenderit et fugit doloremque corporis nihil.',
-                Icon: _components.Icons.Web
+                Icon: _components.Icon.Web
             },
             {
                 title: 'Software Development',
                 className: 'bg-gradient-to-tr from-green-700 to-green-900',
                 copy: 'Sequi perspiciatis voluptatibus in dolorem et autem qui veniam aperiam. Doloremque quo repellendus reprehenderit et fugit doloremque corporis nihil.',
-                Icon: _components.Icons.DesktopMobile
+                Icon: _components.Icon.DesktopMobile
             },
             {
                 title: 'Mobile Apps',
                 className: 'bg-gradient-to-tr from-red-700 to-red-900',
                 copy: 'Sequi perspiciatis voluptatibus in dolorem et autem qui veniam aperiam. Doloremque quo repellendus reprehenderit et fugit doloremque corporis nihil.',
-                Icon: _components.Icons.Cellphone
+                Icon: _components.Icon.Cellphone
             },
             {
                 title: 'Custom Development',
                 className: 'bg-gradient-to-tr from-purple-700 to-purple-900',
                 copy: 'Sequi perspiciatis voluptatibus in dolorem et autem qui veniam aperiam. Doloremque quo repellendus reprehenderit et fugit doloremque corporis nihil.',
-                Icon: _components.Icons.MonitorCellphoneStar
+                Icon: _components.Icon.MonitorCellphoneStar
             }
         ]
     },
@@ -47523,7 +45832,7 @@ exports.default = {
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/xantiagoma',
-            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.LinkedIn, {
+            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.LinkedIn, {
                 width: 24,
                 height: 24,
                 className: "cta",
@@ -47537,7 +45846,7 @@ exports.default = {
         {
             name: 'GitHub',
             url: 'https://github.com/xantiagoma',
-            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.GitHub, {
+            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.GitHub, {
                 width: 24,
                 height: 24,
                 className: "cta",
@@ -47551,7 +45860,7 @@ exports.default = {
         {
             name: 'Twitter',
             url: 'https://twitter.com/xantiagoma',
-            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.Twitter, {
+            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.Twitter, {
                 width: 24,
                 height: 24,
                 className: "cta",
@@ -47565,7 +45874,7 @@ exports.default = {
         {
             name: 'Instagram',
             url: 'https://www.instagram.com/xantiagoma',
-            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.Instagram, {
+            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.Instagram, {
                 width: 24,
                 height: 24,
                 className: "cta",
@@ -47579,7 +45888,7 @@ exports.default = {
         {
             name: 'Gmail',
             url: 'mailto:xantiagoma@gmail.com',
-            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icons.Gmail, {
+            icon: /*#__PURE__*/ _jsxRuntime.jsx(_components.Icon.Gmail, {
                 width: 24,
                 height: 24,
                 className: "cta",
@@ -47600,37 +45909,37 @@ exports.default = {
                     {
                         title: 'JavaScript / Node.js / TypeScript',
                         className: 'bg-gradient-to-tr from-yellow-400 via-yellow-600 to-yellow-600',
-                        Icon: _components.Icons.NodeJS
+                        Icon: _components.Icon.NodeJS
                     },
                     {
                         title: 'Dart',
                         className: 'bg-gradient-to-tr from-teal-400 to-blue-500',
-                        Icon: _components.Icons.DartLogo
+                        Icon: _components.Icon.DartLogo
                     },
                     {
                         title: 'Python',
                         className: 'bg-gradient-to-tr from-blue-600 to-yellow-500',
-                        Icon: _components.Icons.Python
+                        Icon: _components.Icon.Python
                     },
                     {
                         title: 'Go',
                         className: 'bg-gradient-to-tr from-teal-500 to-blue-600',
-                        Icon: _components.Icons.Go
+                        Icon: _components.Icon.Go
                     },
                     {
                         title: 'Kotlin / Java',
                         className: 'bg-gradient-to-tr from-blue-600 via-red-600 to-orange-500',
-                        Icon: _components.Icons.Kotlin
+                        Icon: _components.Icon.Kotlin
                     },
                     {
                         title: 'PHP',
                         className: 'bg-gradient-to-tr from-indigo-800 to-indigo-500',
-                        Icon: _components.Icons.PHP
+                        Icon: _components.Icon.PHP
                     },
                     {
                         title: 'Bash',
                         className: 'bg-gradient-to-tr from-green-900 to-black',
-                        Icon: _components.Icons.Bash
+                        Icon: _components.Icon.Bash
                     }
                 ]
             },
@@ -47640,27 +45949,27 @@ exports.default = {
                     {
                         title: 'React',
                         className: 'bg-gradient-to-bl from-cyan-600 to-cyan-800',
-                        Icon: _components.Icons.React
+                        Icon: _components.Icon.React
                     },
                     {
                         title: 'Vue',
                         className: 'bg-gradient-to-bl from-emerald-600 to-emerald-800',
-                        Icon: _components.Icons.Vue
+                        Icon: _components.Icon.Vue
                     },
                     {
                         title: 'Flutter',
                         className: 'bg-gradient-to-bl from-sky-600 to-sky-800',
-                        Icon: _components.Icons.Flutter
+                        Icon: _components.Icon.Flutter
                     },
                     {
                         title: 'Angular',
                         className: 'bg-gradient-to-bl from-red-600 to-red-800',
-                        Icon: _components.Icons.Angular
+                        Icon: _components.Icon.Angular
                     },
                     {
                         title: 'Ionic',
                         className: 'bg-gradient-to-bl from-blue-600 to-blue-800',
-                        Icon: _components.Icons.Ionic
+                        Icon: _components.Icon.Ionic
                     }
                 ]
             },
@@ -47670,42 +45979,42 @@ exports.default = {
                     {
                         title: 'Chakra UI & StyledComponents',
                         className: 'bg-gradient-to-bl from-teal-400 to-teal-600',
-                        Icon: _components.Icons.Chakra
+                        Icon: _components.Icon.Chakra
                     },
                     {
                         title: 'TailwindCSS',
                         className: 'bg-gradient-to-bl from-teal-600 to-teal-800',
-                        Icon: _components.Icons.Tailwind
+                        Icon: _components.Icon.Tailwind
                     },
                     {
                         title: 'Bootstrap',
                         className: 'bg-gradient-to-bl from-violet-600 to-violet-800',
-                        Icon: _components.Icons.Bootstrap
+                        Icon: _components.Icon.Bootstrap
                     },
                     {
                         title: 'Ant Design',
                         className: 'bg-gradient-to-bl from-blue-600 to-red-800',
-                        Icon: _components.Icons.AntDesign
+                        Icon: _components.Icon.AntDesign
                     },
                     {
                         title: 'MaterialUI',
                         className: 'bg-gradient-to-bl from-sky-600 to-blue-800',
-                        Icon: _components.Icons.MaterialUI
+                        Icon: _components.Icon.MaterialUI
                     },
                     {
                         title: 'Foundation',
                         className: 'bg-gradient-to-bl from-cyan-600 to-cyan-800',
-                        Icon: _components.Icons.Foundation
+                        Icon: _components.Icon.Foundation
                     },
                     {
                         title: 'Bulma',
                         className: 'bg-gradient-to-bl from-teal-600 to-teal-800',
-                        Icon: _components.Icons.Bulma
+                        Icon: _components.Icon.Bulma
                     },
                     {
                         title: 'ElementUI',
                         className: 'bg-gradient-to-bl from-sky-600 to-sky-800',
-                        Icon: _components.Icons.Element
+                        Icon: _components.Icon.Element
                     }
                 ]
             },
@@ -47715,42 +46024,42 @@ exports.default = {
                     {
                         title: 'REST',
                         className: 'bg-gradient-to-bl from-blueGray-600 to-blueGray-800',
-                        Icon: _components.Icons.REST
+                        Icon: _components.Icon.REST
                     },
                     {
                         title: 'GraphQL',
                         className: 'bg-gradient-to-bl from-pink-600 to-pink-800',
-                        Icon: _components.Icons.GraphQL
+                        Icon: _components.Icon.GraphQL
                     },
                     {
                         title: 'MongoDB',
                         className: 'bg-gradient-to-bl from-green-600 to-green-800',
-                        Icon: _components.Icons.MongoDB
+                        Icon: _components.Icon.MongoDB
                     },
                     {
                         title: 'PostgreSQL',
                         className: 'bg-gradient-to-bl from-blue-700 via-blue-900 to-blue-900',
-                        Icon: _components.Icons.PostgreSQL
+                        Icon: _components.Icon.PostgreSQL
                     },
                     {
                         title: 'MySQL / MariaDB',
                         className: 'bg-gradient-to-bl from-yellow-800 to-blue-800',
-                        Icon: _components.Icons.MySQL
+                        Icon: _components.Icon.MySQL
                     },
                     {
                         title: 'RethinkDB',
                         className: 'bg-gradient-to-bl from-cyan-700 via-cyan-900 to-cyan-900',
-                        Icon: _components.Icons.RethinkDB
+                        Icon: _components.Icon.RethinkDB
                     },
                     {
                         title: 'CouchDB',
                         className: 'bg-gradient-to-bl from-red-700 via-red-900 to-red-900',
-                        Icon: _components.Icons.CouchDB
+                        Icon: _components.Icon.CouchDB
                     },
                     {
                         title: 'Redis',
                         className: 'bg-gradient-to-bl from-rose-700 via-rose-900 to-rose-900',
-                        Icon: _components.Icons.Redis
+                        Icon: _components.Icon.Redis
                     }
                 ]
             },
@@ -47760,27 +46069,27 @@ exports.default = {
                     {
                         title: 'Express.js / Koa / Hapi / Fastify / Restify',
                         className: 'bg-gradient-to-bl from-blue-700 via-blue-900 to-blue-900',
-                        Icon: _components.Icons.Express
+                        Icon: _components.Icon.Express
                     },
                     {
                         title: 'Flask / Tornado / Bottle',
                         className: 'bg-gradient-to-bl from-yellow-700 via-yellow-900 to-yellow-900',
-                        Icon: _components.Icons.Flask
+                        Icon: _components.Icon.Flask
                     },
                     {
                         title: 'Gin / Revel / Beego / FastHTTP / Martini / Gorilla / Mux',
                         className: 'bg-gradient-to-bl from-indigo-700 via-indigo-900 to-indigo-900',
-                        Icon: _components.Icons.Golang
+                        Icon: _components.Icon.Golang
                     },
                     {
                         title: 'Laravel / Lumen',
                         className: 'bg-gradient-to-bl from-red-700 via-red-900 to-red-900',
-                        Icon: _components.Icons.Laravel
+                        Icon: _components.Icon.Laravel
                     },
                     {
                         title: 'Spring Boot / Spark / Vert.X / Jooby',
                         className: 'bg-gradient-to-bl from-green-700 via-green-900 to-green-900',
-                        Icon: _components.Icons.Java
+                        Icon: _components.Icon.Java
                     }
                 ]
             },
@@ -47790,37 +46099,37 @@ exports.default = {
                     {
                         title: 'Next.js',
                         className: 'bg-gradient-to-bl from-blueGray-700 via-blueGray-900 to-blueGray-900',
-                        Icon: _components.Icons.NextJS
+                        Icon: _components.Icon.NextJS
                     },
                     {
                         title: 'HTML',
                         className: 'bg-gradient-to-bl from-amber-700 via-amber-900 to-amber-900',
-                        Icon: _components.Icons.HTML
+                        Icon: _components.Icon.HTML
                     },
                     {
                         title: 'CSS / SASS / PostCSS',
                         className: 'bg-gradient-to-bl from-sky-700 via-sky-900 to-sky-900',
-                        Icon: _components.Icons.Sass
+                        Icon: _components.Icon.Sass
                     },
                     {
                         title: 'JSON',
                         className: 'bg-gradient-to-bl from-yellow-700 via-yellow-900 to-yellow-900',
-                        Icon: _components.Icons.JSON
+                        Icon: _components.Icon.JSON
                     },
                     {
                         title: 'Nuxt.js',
                         className: 'bg-gradient-to-tl from-green-500 to-green-900',
-                        Icon: _components.Icons.Nuxt
+                        Icon: _components.Icon.Nuxt
                     },
                     {
                         title: 'Gatsby',
                         className: 'bg-gradient-to-tl from-purple-500 via-purple-900 to-purple-900',
-                        Icon: _components.Icons.Gatsby
+                        Icon: _components.Icon.Gatsby
                     },
                     {
                         title: 'PWA',
                         className: 'bg-gradient-to-bl from-coolGray-500 via-coolGray-700 to-coolGray-700',
-                        Icon: _components.Icons.PWA
+                        Icon: _components.Icon.PWA
                     }
                 ]
             },
@@ -47830,27 +46139,27 @@ exports.default = {
                     {
                         title: 'Git',
                         className: 'bg-gradient-to-bl from-coolGray-500 via-coolGray-700 to-coolGray-700',
-                        Icon: _components.Icons.Git
+                        Icon: _components.Icon.Git
                     },
                     {
                         title: 'Sketch / Figma',
                         className: 'bg-gradient-to-bl from-yellow-500 via-yellow-700 to-yellow-700',
-                        Icon: _components.Icons.Sketch
+                        Icon: _components.Icon.Sketch
                     },
                     {
                         title: 'Photoshop / Illustrator',
                         className: 'bg-gradient-to-bl from-blue-500 via-blue-700 to-blue-700',
-                        Icon: _components.Icons.Adobe
+                        Icon: _components.Icon.Adobe
                     },
                     {
                         title: 'Office / Drive',
                         className: 'bg-gradient-to-bl from-orange-500 via-orange-700 to-orange-700',
-                        Icon: _components.Icons.Drive
+                        Icon: _components.Icon.Drive
                     },
                     {
                         title: 'JIRA',
                         className: 'bg-gradient-to-bl from-sky-500 via-sky-700 to-sky-700',
-                        Icon: _components.Icons.Atlassian
+                        Icon: _components.Icon.Atlassian
                     }
                 ]
             },
@@ -47860,43 +46169,43 @@ exports.default = {
                     {
                         title: 'Linux',
                         className: 'bg-gradient-to-tl from-yellow-500 via-yellow-700 to-yellow-700',
-                        Icon: _components.Icons.Linux
+                        Icon: _components.Icon.Linux
                     },
                     {
                         title: 'Docker',
                         className: 'bg-gradient-to-tl from-sky-500 via-sky-700 to-sky-700',
-                        Icon: _components.Icons.Docker
+                        Icon: _components.Icon.Docker
                     },
                     {
                         title: 'NGINX',
                         className: 'bg-gradient-to-tl from-teal-500 via-teal-700 to-teal-700',
-                        Icon: _components.Icons.NGINX
+                        Icon: _components.Icon.NGINX
                     },
                     {
                         title: 'CI/CD',
                         className: 'bg-gradient-to-tl from-warmGray-500 via-warmGray-700 to-warmGray-700',
                         copy: 'GitHub Actions / Azure Pipelines',
-                        Icon: _components.Icons.CICD
+                        Icon: _components.Icon.CICD
                     },
                     {
                         title: 'Mac',
                         className: 'bg-gradient-to-tl from-blueGray-500 via-blueGray-700 to-blueGray-700',
-                        Icon: _components.Icons.Apple
+                        Icon: _components.Icon.Apple
                     },
                     {
                         title: 'Apache',
                         className: 'bg-gradient-to-tl from-orange-500 via-red-700 to-red-700',
-                        Icon: _components.Icons.Apache
+                        Icon: _components.Icon.Apache
                     },
                     {
                         title: 'Raspberry Pi',
                         className: 'bg-gradient-to-tl from-red-500 via-rose-700 to-rose-700',
-                        Icon: _components.Icons.RaspberryPi
+                        Icon: _components.Icon.RaspberryPi
                     },
                     {
                         title: 'Caddy',
                         className: 'bg-gradient-to-tl from-green-500 via-cyan-700 to-cyan-700',
-                        Icon: _components.Icons.Caddy
+                        Icon: _components.Icon.Caddy
                     }
                 ]
             },
@@ -47906,52 +46215,52 @@ exports.default = {
                     {
                         title: 'Firebase',
                         className: 'bg-gradient-to-tl from-yellow-500 to-yellow-700',
-                        Icon: _components.Icons.Firebase
+                        Icon: _components.Icon.Firebase
                     },
                     {
                         title: 'Strapi',
                         className: 'bg-gradient-to-tl from-purple-500 via-purple-900 to-purple-900',
-                        Icon: _components.Icons.Strapi
+                        Icon: _components.Icon.Strapi
                     },
                     {
                         title: 'Contentful',
                         className: 'bg-gradient-to-tl from-blue-700 to-red-700',
-                        Icon: _components.Icons.Contentful
+                        Icon: _components.Icon.Contentful
                     },
                     {
                         title: 'Wordpress',
                         className: 'bg-gradient-to-tl from-sky-700 to-cyan-700',
-                        Icon: _components.Icons.Wordpress
+                        Icon: _components.Icon.Wordpress
                     },
                     {
                         title: 'GraphCMS',
                         className: 'bg-gradient-to-tl from-black to-gray-700',
-                        Icon: _components.Icons.GraphCMS
+                        Icon: _components.Icon.GraphCMS
                     },
                     {
                         title: 'Parse Server',
                         className: 'bg-gradient-to-tl from-blue-700 to-sky-700',
-                        Icon: _components.Icons.Parse
+                        Icon: _components.Icon.Parse
                     },
                     {
                         title: 'Directus',
                         className: 'bg-gradient-to-tl from-blueGray-900 to-black',
-                        Icon: _components.Icons.Directus
+                        Icon: _components.Icon.Directus
                     },
                     {
                         title: 'Cockpit',
                         className: 'bg-gradient-to-tl from-trueGray-800 to-black',
-                        Icon: _components.Icons.Cockpit
+                        Icon: _components.Icon.Cockpit
                     },
                     {
                         title: 'Wagtail',
                         className: 'bg-gradient-to-tl from-black to-warmGray-700',
-                        Icon: _components.Icons.Wagtail
+                        Icon: _components.Icon.Wagtail
                     },
                     {
                         title: 'Prismic',
                         className: 'bg-gradient-to-tl from-yellow-700 via-blue-700 to-red-700',
-                        Icon: _components.Icons.Prismic
+                        Icon: _components.Icon.Prismic
                     }
                 ]
             },
@@ -47961,22 +46270,22 @@ exports.default = {
                     {
                         title: 'Kubernetes',
                         className: 'bg-gradient-to-tl from-blue-500 via-blue-700 to-blue-700',
-                        Icon: _components.Icons.Kubernetes
+                        Icon: _components.Icon.Kubernetes
                     },
                     {
                         title: 'Rust',
                         className: 'bg-gradient-to-tl from-red-500 via-orange-700 to-orange-700',
-                        Icon: _components.Icons.Rust
+                        Icon: _components.Icon.Rust
                     },
                     {
                         title: 'Cloud',
                         className: 'bg-gradient-to-tl from-indigo-500 via-indigo-700 to-indigo-700',
-                        Icon: _components.Icons.Cloud
+                        Icon: _components.Icon.Cloud
                     },
                     {
                         title: 'Haskell',
                         className: 'bg-gradient-to-tl from-black to-purple-800',
-                        Icon: _components.Icons.Haskell
+                        Icon: _components.Icon.Haskell
                     }
                 ]
             }
@@ -47989,7 +46298,7 @@ exports.default = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../components":"kjRWj","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"iKlu2":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../components":"kjRWj"}],"iKlu2":[function(require,module,exports) {
 module.exports = Promise.resolve(module.bundle.root("8m5c1"));
 
 },{}],"fF8zP":[function(require,module,exports) {
