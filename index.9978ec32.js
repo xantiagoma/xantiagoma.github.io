@@ -26220,7 +26220,7 @@ const Home = ()=>{
                                         children: [
                                             /*#__PURE__*/ _jsxRuntime.jsx(_reactAspectRatioDefault.default, {
                                                 ratio: 16 / 9,
-                                                role: "image",
+                                                role: "presentation",
                                                 __source: {
                                                     fileName: "src/pages/Home.tsx",
                                                     lineNumber: 100
@@ -26326,7 +26326,7 @@ const Home = ()=>{
                                                     children: [
                                                         /*#__PURE__*/ _jsxRuntime.jsx(_reactAspectRatioDefault.default, {
                                                             ratio: 16 / 9,
-                                                            role: "image",
+                                                            role: "presentation",
                                                             __source: {
                                                                 fileName: "src/pages/Home.tsx",
                                                                 lineNumber: 128
