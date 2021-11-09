@@ -25457,7 +25457,7 @@ parcelHelpers.export(exports, "useMouseHovered", ()=>_useMouseHoveredDefault.def
 );
 parcelHelpers.export(exports, "useMouseWheel", ()=>_useMouseWheelDefault.default
 );
-parcelHelpers.export(exports, "useNetwork", ()=>_useNetworkDefault.default
+parcelHelpers.export(exports, "useNetworkState", ()=>_useNetworkStateDefault.default
 );
 parcelHelpers.export(exports, "useNumber", ()=>_useNumberDefault.default
 );
@@ -25561,13 +25561,13 @@ parcelHelpers.export(exports, "createGlobalState", ()=>_createGlobalState.create
 );
 parcelHelpers.export(exports, "useHash", ()=>_useHash.useHash
 );
-var _createMemo = require("./createMemo");
+var _createMemo = require("./factory/createMemo");
 var _createMemoDefault = parcelHelpers.interopDefault(_createMemo);
-var _createReducerContext = require("./createReducerContext");
+var _createReducerContext = require("./factory/createReducerContext");
 var _createReducerContextDefault = parcelHelpers.interopDefault(_createReducerContext);
-var _createReducer = require("./createReducer");
+var _createReducer = require("./factory/createReducer");
 var _createReducerDefault = parcelHelpers.interopDefault(_createReducer);
-var _createStateContext = require("./createStateContext");
+var _createStateContext = require("./factory/createStateContext");
 var _createStateContextDefault = parcelHelpers.interopDefault(_createStateContext);
 var _useAsync = require("./useAsync");
 var _useAsyncDefault = parcelHelpers.interopDefault(_useAsync);
@@ -25639,7 +25639,7 @@ var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
 var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
 var _useKey = require("./useKey");
 var _useKeyDefault = parcelHelpers.interopDefault(_useKey);
-var _createBreakpoint = require("./createBreakpoint");
+var _createBreakpoint = require("./factory/createBreakpoint");
 var _createBreakpointDefault = parcelHelpers.interopDefault(_createBreakpoint);
 var _useKeyPress = require("./useKeyPress");
 var _useKeyPressDefault = parcelHelpers.interopDefault(_useKeyPress);
@@ -25682,8 +25682,8 @@ var _useMouseHovered = require("./useMouseHovered");
 var _useMouseHoveredDefault = parcelHelpers.interopDefault(_useMouseHovered);
 var _useMouseWheel = require("./useMouseWheel");
 var _useMouseWheelDefault = parcelHelpers.interopDefault(_useMouseWheel);
-var _useNetwork = require("./useNetwork");
-var _useNetworkDefault = parcelHelpers.interopDefault(_useNetwork);
+var _useNetworkState = require("./useNetworkState");
+var _useNetworkStateDefault = parcelHelpers.interopDefault(_useNetworkState);
 var _useNumber = require("./useNumber");
 var _useNumberDefault = parcelHelpers.interopDefault(_useNumber);
 var _useObservable = require("./useObservable");
@@ -25775,173 +25775,10 @@ var _useRendersCount = require("./useRendersCount");
 var _useFirstMountState = require("./useFirstMountState");
 var _useSet = require("./useSet");
 var _useSetDefault = parcelHelpers.interopDefault(_useSet);
-var _createGlobalState = require("./createGlobalState");
+var _createGlobalState = require("./factory/createGlobalState");
 var _useHash = require("./useHash");
 
-},{"./createMemo":"eoWrS","./createReducerContext":"dzpS1","./createReducer":"hfF1w","./createStateContext":"jzrFp","./useAsync":"4Xdra","./useAsyncFn":"i5F8y","./useAsyncRetry":"4Q8og","./useAudio":"aVmBw","./useBattery":"eBHAS","./useBeforeUnload":"hQlmR","./useBoolean":"aFV5w","./useClickAway":"hR8Ge","./useCookie":"dldyd","./useCopyToClipboard":"4UTVu","./useCounter":"eK0wn","./useCss":"6oI6l","./useCustomCompareEffect":"dLPhP","./useDebounce":"9SKVm","./useDeepCompareEffect":"hjS1P","./useDefault":"jBHKg","./useDrop":"agJAt","./useDropArea":"9Cy8T","./useEffectOnce":"24FnF","./useEnsuredForwardedRef":"bupWR","./useEvent":"afvLw","./useError":"55xwd","./useFavicon":"7AvhR","./useFullscreen":"4e1bU","./useGeolocation":"38XbF","./useGetSet":"7ptcM","./useGetSetState":"jSeu1","./useHarmonicIntervalFn":"kZBoq","./useHover":"esodo","./useHoverDirty":"2FuTz","./useIdle":"g3Qvz","./useIntersection":"iEihF","./useInterval":"d1RsL","./useIsomorphicLayoutEffect":"nDfTQ","./useKey":"84lN8","./createBreakpoint":"5ccjL","./useKeyPress":"emkSE","./useKeyPressEvent":"5wrIv","./useLatest":"lh7Vr","./useLifecycles":"8cTRX","./useList":"aBbxa","./useLocalStorage":"gqDM5","./useLocation":"8QVCb","./useLockBodyScroll":"gVhRl","./useLogger":"eIdep","./useLongPress":"cEcrD","./useMap":"icWSc","./useMedia":"fVcWx","./useMediaDevices":"kR5Nz","./useMediatedState":"eUPLv","./useMethods":"2jtYn","./useMotion":"RS4Wd","./useMount":"k4vVz","./useMountedState":"3gztc","./useMouse":"cj8U2","./useMouseHovered":"7XE71","./useMouseWheel":"juzki","./useNetwork":"cITMH","./useNumber":"Km4dU","./useObservable":"d2FCw","./useOrientation":"fFimS","./usePageLeave":"bYaNt","./usePermission":"i3Lc8","./usePrevious":"8oxGH","./usePreviousDistinct":"eauZj","./usePromise":"4vWGM","./useQueue":"ebBkO","./useRaf":"4F3vx","./useRafLoop":"6hZkY","./useRafState":"GgmUD","./useSearchParam":"4sauf","./useScratch":"7SPuv","./useScroll":"1p08R","./useScrolling":"7Moct","./useSessionStorage":"1YWgd","./useSetState":"jKWo0","./useShallowCompareEffect":"70xNH","./useSize":"iXWEN","./useSlider":"8mZgr","./useSpeech":"d3lH5","./useStartTyping":"iXimU","./useStateWithHistory":"4B3iT","./useStateList":"aYoyE","./useThrottle":"6gCMx","./useThrottleFn":"Mx8HT","./useTimeout":"lq9ih","./useTimeoutFn":"2N4Qu","./useTitle":"kfTgK","./useToggle":"eAyE1","./useTween":"h5Xt1","./useUnmount":"36xXc","./useUnmountPromise":"9p2F4","./useUpdate":"jfCN9","./useUpdateEffect":"831mN","./useUpsert":"ZGcDv","./useVibrate":"dILya","./useVideo":"kyZUW","./useStateValidator":"4Tt5c","./useScrollbarWidth":"lNLoE","./useMultiStateValidator":"6QPY6","./useWindowScroll":"bk1yJ","./useWindowSize":"bbITl","./useMeasure":"gaPUl","./useRendersCount":"etwmm","./useFirstMountState":"6CMvr","./useSet":"2bjYl","./createGlobalState":"guDu1","./useHash":"hCE9D","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"eoWrS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var createMemo = function(fn) {
-    return function() {
-        var args = [];
-        for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
-        return _react.useMemo(function() {
-            return fn.apply(void 0, args);
-        }, args);
-    };
-};
-exports.default = createMemo;
-
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"dzpS1":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var createReducerContext = function(reducer, defaultInitialState) {
-    var context = _react.createContext(undefined);
-    var providerFactory = function(props, children) {
-        return _react.createElement(context.Provider, props, children);
-    };
-    var ReducerProvider = function(_a) {
-        var children = _a.children, initialState = _a.initialState;
-        var state = _react.useReducer(reducer, initialState !== undefined ? initialState : defaultInitialState);
-        return providerFactory({
-            value: state
-        }, children);
-    };
-    var useReducerContext = function() {
-        var state = _react.useContext(context);
-        if (state == null) throw new Error("useReducerContext must be used inside a ReducerProvider.");
-        return state;
-    };
-    return [
-        useReducerContext,
-        ReducerProvider,
-        context
-    ];
-};
-exports.default = createReducerContext;
-
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hfF1w":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _useUpdateEffect = require("./useUpdateEffect");
-var _useUpdateEffectDefault = parcelHelpers.interopDefault(_useUpdateEffect);
-function composeMiddleware(chain) {
-    return function(context, dispatch) {
-        return chain.reduceRight(function(res, middleware) {
-            return middleware(context)(res);
-        }, dispatch);
-    };
-}
-var createReducer = function() {
-    var middlewares = [];
-    for(var _i1 = 0; _i1 < arguments.length; _i1++)middlewares[_i1] = arguments[_i1];
-    var composedMiddleware = composeMiddleware(middlewares);
-    return function(reducer, initialState, initializer) {
-        if (initializer === void 0) initializer = function(value) {
-            return value;
-        };
-        var ref = _react.useRef(initializer(initialState));
-        var _a = _react.useState(ref.current), setState = _a[1];
-        var dispatch = _react.useCallback(function(action) {
-            ref.current = reducer(ref.current, action);
-            setState(ref.current);
-            return action;
-        }, [
-            reducer
-        ]);
-        var dispatchRef = _react.useRef(composedMiddleware({
-            getState: function() {
-                return ref.current;
-            },
-            dispatch: function() {
-                var args = [];
-                for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
-                return dispatchRef.current.apply(dispatchRef, args);
-            }
-        }, dispatch));
-        _useUpdateEffectDefault.default(function() {
-            dispatchRef.current = composedMiddleware({
-                getState: function() {
-                    return ref.current;
-                },
-                dispatch: function() {
-                    var args = [];
-                    for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
-                    return dispatchRef.current.apply(dispatchRef, args);
-                }
-            }, dispatch);
-        }, [
-            dispatch
-        ]);
-        return [
-            ref.current,
-            dispatchRef.current
-        ];
-    };
-};
-exports.default = createReducer;
-
-},{"react":"4mchR","./useUpdateEffect":"831mN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"831mN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _useFirstMountState = require("./useFirstMountState");
-var useUpdateEffect = function(effect, deps) {
-    var isFirstMount = _useFirstMountState.useFirstMountState();
-    _react.useEffect(function() {
-        if (!isFirstMount) return effect();
-    }, deps);
-};
-exports.default = useUpdateEffect;
-
-},{"react":"4mchR","./useFirstMountState":"6CMvr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"6CMvr":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useFirstMountState", ()=>useFirstMountState
-);
-var _react = require("react");
-function useFirstMountState() {
-    var isFirst = _react.useRef(true);
-    if (isFirst.current) {
-        isFirst.current = false;
-        return true;
-    }
-    return isFirst.current;
-}
-
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"jzrFp":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var createStateContext = function(defaultInitialValue) {
-    var context = _react.createContext(undefined);
-    var providerFactory = function(props, children) {
-        return _react.createElement(context.Provider, props, children);
-    };
-    var StateProvider = function(_a) {
-        var children = _a.children, initialValue = _a.initialValue;
-        var state = _react.useState(initialValue !== undefined ? initialValue : defaultInitialValue);
-        return providerFactory({
-            value: state
-        }, children);
-    };
-    var useStateContext = function() {
-        var state = _react.useContext(context);
-        if (state == null) throw new Error("useStateContext must be used inside a StateProvider.");
-        return state;
-    };
-    return [
-        useStateContext,
-        StateProvider,
-        context
-    ];
-};
-exports.default = createStateContext;
-
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"4Xdra":[function(require,module,exports) {
+},{"./useAsync":"4Xdra","./useAsyncFn":"i5F8y","./useAsyncRetry":"4Q8og","./useAudio":"aVmBw","./useBattery":"eBHAS","./useBeforeUnload":"hQlmR","./useBoolean":"aFV5w","./useClickAway":"hR8Ge","./useCookie":"dldyd","./useCopyToClipboard":"4UTVu","./useCounter":"eK0wn","./useCss":"6oI6l","./useCustomCompareEffect":"dLPhP","./useDebounce":"9SKVm","./useDeepCompareEffect":"hjS1P","./useDefault":"jBHKg","./useDrop":"agJAt","./useDropArea":"9Cy8T","./useEffectOnce":"24FnF","./useEnsuredForwardedRef":"bupWR","./useEvent":"afvLw","./useError":"55xwd","./useFavicon":"7AvhR","./useFullscreen":"4e1bU","./useGeolocation":"38XbF","./useGetSet":"7ptcM","./useGetSetState":"jSeu1","./useHarmonicIntervalFn":"kZBoq","./useHover":"esodo","./useHoverDirty":"2FuTz","./useIdle":"g3Qvz","./useIntersection":"iEihF","./useInterval":"d1RsL","./useIsomorphicLayoutEffect":"nDfTQ","./useKey":"84lN8","./useKeyPress":"emkSE","./useKeyPressEvent":"5wrIv","./useLatest":"lh7Vr","./useLifecycles":"8cTRX","./useList":"aBbxa","./useLocalStorage":"gqDM5","./useLocation":"8QVCb","./useLockBodyScroll":"gVhRl","./useLogger":"eIdep","./useLongPress":"cEcrD","./useMap":"icWSc","./useMedia":"fVcWx","./useMediaDevices":"kR5Nz","./useMediatedState":"eUPLv","./useMethods":"2jtYn","./useMotion":"RS4Wd","./useMount":"k4vVz","./useMountedState":"3gztc","./useMouse":"cj8U2","./useMouseHovered":"7XE71","./useMouseWheel":"juzki","./useNumber":"Km4dU","./useObservable":"d2FCw","./useOrientation":"fFimS","./usePageLeave":"bYaNt","./usePermission":"i3Lc8","./usePrevious":"8oxGH","./usePreviousDistinct":"eauZj","./usePromise":"4vWGM","./useQueue":"ebBkO","./useRaf":"4F3vx","./useRafLoop":"6hZkY","./useRafState":"GgmUD","./useSearchParam":"4sauf","./useScratch":"7SPuv","./useScroll":"1p08R","./useScrolling":"7Moct","./useSessionStorage":"1YWgd","./useSetState":"jKWo0","./useShallowCompareEffect":"70xNH","./useSize":"iXWEN","./useSlider":"8mZgr","./useSpeech":"d3lH5","./useStartTyping":"iXimU","./useStateWithHistory":"4B3iT","./useStateList":"aYoyE","./useThrottle":"6gCMx","./useThrottleFn":"Mx8HT","./useTimeout":"lq9ih","./useTimeoutFn":"2N4Qu","./useTitle":"kfTgK","./useToggle":"eAyE1","./useTween":"h5Xt1","./useUnmount":"36xXc","./useUnmountPromise":"9p2F4","./useUpdate":"jfCN9","./useUpdateEffect":"831mN","./useUpsert":"ZGcDv","./useVibrate":"dILya","./useVideo":"kyZUW","./useStateValidator":"4Tt5c","./useScrollbarWidth":"lNLoE","./useMultiStateValidator":"6QPY6","./useWindowScroll":"bk1yJ","./useWindowSize":"bbITl","./useMeasure":"gaPUl","./useRendersCount":"etwmm","./useFirstMountState":"6CMvr","./useSet":"2bjYl","./useHash":"hCE9D","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./factory/createMemo":"l1b1k","./factory/createReducerContext":"gozfP","./factory/createReducer":"88549","./factory/createStateContext":"eWLsz","./factory/createBreakpoint":"7Adt3","./useNetworkState":"7Bm8m","./factory/createGlobalState":"3yd99"}],"4Xdra":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -25980,7 +25817,7 @@ function useAsyncFn(fn, deps, initialState) {
         var args = [];
         for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
         var callId = ++lastCallId.current;
-        set(function(prevState) {
+        if (!state.loading) set(function(prevState) {
             return _tslib.__assign(_tslib.__assign({
             }, prevState), {
                 loading: true
@@ -26448,7 +26285,7 @@ function useMountedState() {
         return function() {
             mountedRef.current = false;
         };
-    });
+    }, []);
     return get;
 }
 exports.default = useMountedState;
@@ -26488,21 +26325,21 @@ exports.default = useAsyncRetry;
 },{"tslib":"j55WF","react":"4mchR","./useAsync":"4Xdra","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"aVmBw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _createHTMLMediaHook = require("./util/createHTMLMediaHook");
+var _createHTMLMediaHook = require("./factory/createHTMLMediaHook");
 var _createHTMLMediaHookDefault = parcelHelpers.interopDefault(_createHTMLMediaHook);
 var useAudio = _createHTMLMediaHookDefault.default('audio');
 exports.default = useAudio;
 
-},{"./util/createHTMLMediaHook":"ke9lv","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ke9lv":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./factory/createHTMLMediaHook":"7hha7"}],"7hha7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
 var _react = require("react");
 var _useSetState = require("../useSetState");
 var _useSetStateDefault = parcelHelpers.interopDefault(_useSetState);
-var _parseTimeRanges = require("./parseTimeRanges");
+var _parseTimeRanges = require("../misc/parseTimeRanges");
 var _parseTimeRangesDefault = parcelHelpers.interopDefault(_parseTimeRanges);
-var createHTMLMediaHook = function(tag) {
+function createHTMLMediaHook(tag) {
     return function(elOrProps) {
         var element;
         var props;
@@ -26516,7 +26353,8 @@ var createHTMLMediaHook = function(tag) {
             duration: 0,
             paused: true,
             muted: false,
-            volume: 1
+            volume: 1,
+            playing: false
         }), state = _a[0], setState = _a[1];
         var ref = _react.useRef(null);
         var wrapEvent = function(userEvent, proxyEvent) {
@@ -26533,9 +26371,20 @@ var createHTMLMediaHook = function(tag) {
                 paused: false
             });
         };
+        var onPlaying = function() {
+            return setState({
+                playing: true
+            });
+        };
+        var onWaiting = function() {
+            return setState({
+                playing: false
+            });
+        };
         var onPause = function() {
             return setState({
-                paused: true
+                paused: true,
+                playing: false
             });
         };
         var onVolumeChange = function() {
@@ -26574,6 +26423,8 @@ var createHTMLMediaHook = function(tag) {
         }, props), {
             ref: ref,
             onPlay: wrapEvent(props.onPlay, onPlay),
+            onPlaying: wrapEvent(props.onPlaying, onPlaying),
+            onWaiting: wrapEvent(props.onWaiting, onWaiting),
             onPause: wrapEvent(props.onPause, onPause),
             onVolumeChange: wrapEvent(props.onVolumeChange, onVolumeChange),
             onDurationChange: wrapEvent(props.onDurationChange, onDurationChange),
@@ -26585,6 +26436,8 @@ var createHTMLMediaHook = function(tag) {
         }, props), {
             ref: ref,
             onPlay: wrapEvent(props.onPlay, onPlay),
+            onPlaying: wrapEvent(props.onPlaying, onPlaying),
+            onWaiting: wrapEvent(props.onWaiting, onWaiting),
             onPause: wrapEvent(props.onPause, onPause),
             onVolumeChange: wrapEvent(props.onVolumeChange, onVolumeChange),
             onDurationChange: wrapEvent(props.onDurationChange, onDurationChange),
@@ -26668,10 +26521,10 @@ var createHTMLMediaHook = function(tag) {
             ref
         ];
     };
-};
+}
 exports.default = createHTMLMediaHook;
 
-},{"tslib":"j55WF","react":"4mchR","../useSetState":"jKWo0","./parseTimeRanges":"go74l","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"jKWo0":[function(require,module,exports) {
+},{"tslib":"j55WF","react":"4mchR","../useSetState":"jKWo0","../misc/parseTimeRanges":"lhDzc","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"jKWo0":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -26684,9 +26537,7 @@ var useSetState = function(initialState) {
             return Object.assign({
             }, prevState, patch instanceof Function ? patch(prevState) : patch);
         });
-    }, [
-        set
-    ]);
+    }, []);
     return [
         state,
         setState
@@ -26694,25 +26545,27 @@ var useSetState = function(initialState) {
 };
 exports.default = useSetState;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"go74l":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"lhDzc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var parseTimeRanges = function(ranges) {
+function parseTimeRanges(ranges) {
     var result = [];
     for(var i = 0; i < ranges.length; i++)result.push({
         start: ranges.start(i),
         end: ranges.end(i)
     });
     return result;
-};
+}
 exports.default = parseTimeRanges;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"eBHAS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
-var nav = typeof navigator === 'object' ? navigator : undefined;
+var _util = require("./misc/util");
+var _isDeepEqual = require("./misc/isDeepEqual");
+var _isDeepEqualDefault = parcelHelpers.interopDefault(_isDeepEqual);
+var nav = _util.isNavigator ? navigator : undefined;
 var isBatteryApiSupported = nav && typeof nav.getBattery === 'function';
 function useBatteryMock() {
     return {
@@ -26737,7 +26590,7 @@ function useBattery() {
                 dischargingTime: battery.dischargingTime,
                 chargingTime: battery.chargingTime
             };
-            !_util.isDeepEqual(state, newState) && setState(newState);
+            !_isDeepEqualDefault.default(state, newState) && setState(newState);
         };
         nav.getBattery().then(function(bat) {
             if (!isMounted) return;
@@ -26762,31 +26615,40 @@ function useBattery() {
 }
 exports.default = isBatteryApiSupported ? useBattery : useBatteryMock;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"b7OTp":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk","./misc/isDeepEqual":"7xUvR"}],"8mpFk":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "isClient", ()=>isClient
+parcelHelpers.export(exports, "noop", ()=>noop
 );
 parcelHelpers.export(exports, "on", ()=>on
 );
 parcelHelpers.export(exports, "off", ()=>off
 );
-parcelHelpers.export(exports, "isDeepEqual", ()=>isDeepEqual
+parcelHelpers.export(exports, "isBrowser", ()=>isBrowser
 );
+parcelHelpers.export(exports, "isNavigator", ()=>isNavigator
+);
+var noop = function() {
+};
+function on(obj) {
+    var args = [];
+    for(var _i = 1; _i < arguments.length; _i++)args[_i - 1] = arguments[_i];
+    if (obj && obj.addEventListener) obj.addEventListener.apply(obj, args);
+}
+function off(obj) {
+    var args = [];
+    for(var _i = 1; _i < arguments.length; _i++)args[_i - 1] = arguments[_i];
+    if (obj && obj.removeEventListener) obj.removeEventListener.apply(obj, args);
+}
+var isBrowser = typeof window !== 'undefined';
+var isNavigator = typeof navigator !== 'undefined';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7xUvR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
 var _react = require("fast-deep-equal/react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var isClient = typeof window === 'object';
-var on = function(obj) {
-    var args = [];
-    for(var _i = 1; _i < arguments.length; _i++)args[_i - 1] = arguments[_i];
-    return obj.addEventListener.apply(obj, args);
-};
-var off = function(obj) {
-    var args = [];
-    for(var _i = 1; _i < arguments.length; _i++)args[_i - 1] = arguments[_i];
-    return obj.removeEventListener.apply(obj, args);
-};
-var isDeepEqual = _reactDefault.default;
+exports.default = _reactDefault.default;
 
 },{"fast-deep-equal/react":"gmKxg","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gmKxg":[function(require,module,exports) {
 'use strict';
@@ -26824,6 +26686,7 @@ module.exports = function equal(a, b) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var useBeforeUnload = function(enabled, message) {
     if (enabled === void 0) enabled = true;
     var handler = _react.useCallback(function(event) {
@@ -26838,9 +26701,9 @@ var useBeforeUnload = function(enabled, message) {
     ]);
     _react.useEffect(function() {
         if (!enabled) return;
-        window.addEventListener('beforeunload', handler);
+        _util.on(window, 'beforeunload', handler);
         return function() {
-            return window.removeEventListener('beforeunload', handler);
+            return _util.off(window, 'beforeunload', handler);
         };
     }, [
         enabled,
@@ -26849,7 +26712,7 @@ var useBeforeUnload = function(enabled, message) {
 };
 exports.default = useBeforeUnload;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"aFV5w":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"aFV5w":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useToggle = require("./useToggle");
@@ -26872,7 +26735,7 @@ exports.default = useToggle;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var defaultEvents = [
     'mousedown',
     'touchstart'
@@ -26907,7 +26770,7 @@ var useClickAway = function(ref, onClickAway, events) {
 };
 exports.default = useClickAway;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"dldyd":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"dldyd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -27236,12 +27099,12 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useGetSet = require("./useGetSet");
 var _useGetSetDefault = parcelHelpers.interopDefault(_useGetSet);
-var _resolveHookState = require("./util/resolveHookState");
+var _hookState = require("./misc/hookState");
 function useCounter(initialValue, max, min) {
     if (initialValue === void 0) initialValue = 0;
     if (max === void 0) max = null;
     if (min === void 0) min = null;
-    var init = _resolveHookState.resolveHookState(initialValue);
+    var init = _hookState.resolveHookState(initialValue);
     typeof init !== 'number' && console.error('initialValue has to be a number, got ' + typeof initialValue);
     if (typeof min === 'number') init = Math.max(init, min);
     else if (min !== null) console.error('min has to be a number, got ' + typeof min);
@@ -27253,7 +27116,7 @@ function useCounter(initialValue, max, min) {
         _react.useMemo(function() {
             var set = function(newState) {
                 var prevState = get();
-                var rState = _resolveHookState.resolveHookState(newState, prevState);
+                var rState = _hookState.resolveHookState(newState, prevState);
                 if (prevState !== rState) {
                     if (typeof min === 'number') rState = Math.max(rState, min);
                     if (typeof max === 'number') rState = Math.min(rState, max);
@@ -27265,7 +27128,7 @@ function useCounter(initialValue, max, min) {
                 set: set,
                 inc: function(delta) {
                     if (delta === void 0) delta = 1;
-                    var rDelta = _resolveHookState.resolveHookState(delta, get());
+                    var rDelta = _hookState.resolveHookState(delta, get());
                     if (typeof rDelta !== 'number') console.error('delta has to be a number or function returning a number, got ' + typeof rDelta);
                     set(function(num) {
                         return num + rDelta;
@@ -27273,7 +27136,7 @@ function useCounter(initialValue, max, min) {
                 },
                 dec: function(delta) {
                     if (delta === void 0) delta = 1;
-                    var rDelta = _resolveHookState.resolveHookState(delta, get());
+                    var rDelta = _hookState.resolveHookState(delta, get());
                     if (typeof rDelta !== 'number') console.error('delta has to be a number or function returning a number, got ' + typeof rDelta);
                     set(function(num) {
                         return num - rDelta;
@@ -27281,8 +27144,9 @@ function useCounter(initialValue, max, min) {
                 },
                 reset: function(value) {
                     if (value === void 0) value = init;
-                    var rValue = _resolveHookState.resolveHookState(value, get());
+                    var rValue = _hookState.resolveHookState(value, get());
                     if (typeof rValue !== 'number') console.error('value has to be a number or function returning a number, got ' + typeof rValue);
+                    // eslint-disable-next-line react-hooks/exhaustive-deps
                     init = rValue;
                     set(rValue);
                 }
@@ -27296,25 +27160,23 @@ function useCounter(initialValue, max, min) {
 }
 exports.default = useCounter;
 
-},{"react":"4mchR","./useGetSet":"7ptcM","./util/resolveHookState":"9neMX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7ptcM":[function(require,module,exports) {
+},{"react":"4mchR","./useGetSet":"7ptcM","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/hookState":"i84Eh"}],"7ptcM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useUpdate = require("./useUpdate");
 var _useUpdateDefault = parcelHelpers.interopDefault(_useUpdate);
-var _resolveHookState = require("./util/resolveHookState");
+var _hookState = require("./misc/hookState");
 function useGetSet(initialState) {
-    var state = _react.useRef(_resolveHookState.resolveHookState(initialState));
+    var state = _react.useRef(_hookState.resolveHookState(initialState));
     var update = _useUpdateDefault.default();
     return _react.useMemo(function() {
         return [
-            // get
             function() {
                 return state.current;
             },
-            // set
             function(newState) {
-                state.current = _resolveHookState.resolveHookState(newState, state.current);
+                state.current = _hookState.resolveHookState(newState, state.current);
                 update();
             }, 
         ];
@@ -27322,27 +27184,27 @@ function useGetSet(initialState) {
 }
 exports.default = useGetSet;
 
-},{"react":"4mchR","./useUpdate":"jfCN9","./util/resolveHookState":"9neMX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"jfCN9":[function(require,module,exports) {
+},{"react":"4mchR","./useUpdate":"jfCN9","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/hookState":"i84Eh"}],"jfCN9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var updateReducer = function(num) {
     return (num + 1) % 1000000;
 };
-var useUpdate = function() {
+function useUpdate() {
     var _a = _react.useReducer(updateReducer, 0), update = _a[1];
     return update;
-};
+}
 exports.default = useUpdate;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"9neMX":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"i84Eh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "resolveHookState", ()=>resolveHookState
 );
-function resolveHookState(newState, currentState) {
-    if (typeof newState === 'function') return newState(currentState);
-    return newState;
+function resolveHookState(nextState, currentState) {
+    if (typeof nextState === 'function') return nextState.length ? nextState(currentState) : nextState();
+    return nextState;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"6oI6l":[function(require,module,exports) {
@@ -27643,10 +27505,11 @@ exports.cssToTree = cssToTree;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? _react.useLayoutEffect : _react.useEffect;
+var _util = require("./misc/util");
+var useIsomorphicLayoutEffect = _util.isBrowser ? _react.useLayoutEffect : _react.useEffect;
 exports.default = useIsomorphicLayoutEffect;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"dLPhP":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"dLPhP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -27731,20 +27594,21 @@ exports.default = useTimeoutFn;
 },{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hjS1P":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _util = require("./util");
 var _useCustomCompareEffect = require("./useCustomCompareEffect");
 var _useCustomCompareEffectDefault = parcelHelpers.interopDefault(_useCustomCompareEffect);
+var _isDeepEqual = require("./misc/isDeepEqual");
+var _isDeepEqualDefault = parcelHelpers.interopDefault(_isDeepEqual);
 var isPrimitive = function(val) {
     return val !== Object(val);
 };
 var useDeepCompareEffect = function(effect, deps) {
     if (!(deps instanceof Array) || !deps.length) console.warn('`useDeepCompareEffect` should not be used with no dependencies. Use React.useEffect instead.');
     if (deps.every(isPrimitive)) console.warn('`useDeepCompareEffect` should not be used with dependencies that are all primitive values. Use React.useEffect instead.');
-    _useCustomCompareEffectDefault.default(effect, deps, _util.isDeepEqual);
+    _useCustomCompareEffectDefault.default(effect, deps, _isDeepEqualDefault.default);
 };
 exports.default = useDeepCompareEffect;
 
-},{"./util":"b7OTp","./useCustomCompareEffect":"dLPhP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"jBHKg":[function(require,module,exports) {
+},{"./useCustomCompareEffect":"dLPhP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/isDeepEqual":"7xUvR"}],"jBHKg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -27766,22 +27630,21 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
 var _react = require("react");
-var noop = function() {
-};
+var _util = require("./misc/util");
 var createProcess = function(options) {
     return function(dataTransfer, event) {
         var uri = dataTransfer.getData('text/uri-list');
         if (uri) {
-            (options.onUri || noop)(uri, event);
+            (options.onUri || _util.noop)(uri, event);
             return;
         }
         if (dataTransfer.files && dataTransfer.files.length) {
-            (options.onFiles || noop)(Array.from(dataTransfer.files), event);
+            (options.onFiles || _util.noop)(Array.from(dataTransfer.files), event);
             return;
         }
         if (event.clipboardData) {
             var text = event.clipboardData.getData('text');
-            (options.onText || noop)(text, event);
+            (options.onText || _util.noop)(text, event);
             return;
         }
     };
@@ -27823,19 +27686,19 @@ var useDrop = function(options, args) {
         var onPaste = function(event) {
             process(event.clipboardData, event);
         };
-        document.addEventListener('dragover', onDragOver);
-        document.addEventListener('dragenter', onDragEnter);
-        document.addEventListener('dragleave', onDragLeave);
-        document.addEventListener('dragexit', onDragExit);
-        document.addEventListener('drop', onDrop);
-        if (onText) document.addEventListener('paste', onPaste);
+        _util.on(document, 'dragover', onDragOver);
+        _util.on(document, 'dragenter', onDragEnter);
+        _util.on(document, 'dragleave', onDragLeave);
+        _util.on(document, 'dragexit', onDragExit);
+        _util.on(document, 'drop', onDrop);
+        if (onText) _util.on(document, 'paste', onPaste);
         return function() {
-            document.removeEventListener('dragover', onDragOver);
-            document.removeEventListener('dragenter', onDragEnter);
-            document.removeEventListener('dragleave', onDragLeave);
-            document.removeEventListener('dragexit', onDragExit);
-            document.removeEventListener('drop', onDrop);
-            document.removeEventListener('paste', onPaste);
+            _util.off(document, 'dragover', onDragOver);
+            _util.off(document, 'dragenter', onDragEnter);
+            _util.off(document, 'dragleave', onDragLeave);
+            _util.off(document, 'dragexit', onDragExit);
+            _util.off(document, 'drop', onDrop);
+            _util.off(document, 'paste', onPaste);
         };
     }, _tslib.__spreadArrays([
         process
@@ -27846,14 +27709,13 @@ var useDrop = function(options, args) {
 };
 exports.default = useDrop;
 
-},{"tslib":"j55WF","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"9Cy8T":[function(require,module,exports) {
+},{"tslib":"j55WF","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"9Cy8T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useMountedState = require("./useMountedState");
 var _useMountedStateDefault = parcelHelpers.interopDefault(_useMountedState);
-var noop = function() {
-};
+var _util = require("./misc/util");
 /*
 const defaultState: DropAreaState = {
   over: false,
@@ -27862,15 +27724,15 @@ const defaultState: DropAreaState = {
     return function(dataTransfer, event) {
         var uri = dataTransfer.getData('text/uri-list');
         if (uri) {
-            (options.onUri || noop)(uri, event);
+            (options.onUri || _util.noop)(uri, event);
             return;
         }
         if (dataTransfer.files && dataTransfer.files.length) {
-            (options.onFiles || noop)(Array.from(dataTransfer.files), event);
+            (options.onFiles || _util.noop)(Array.from(dataTransfer.files), event);
             return;
         }
         if (dataTransfer.items && dataTransfer.items.length) dataTransfer.items[0].getAsString(function(text) {
-            if (mounted) (options.onText || noop)(text, event);
+            if (mounted) (options.onText || _util.noop)(text, event);
         });
     };
 };
@@ -27926,7 +27788,7 @@ var useDropArea = function(options) {
 };
 exports.default = useDropArea;
 
-},{"react":"4mchR","./useMountedState":"3gztc","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"24FnF":[function(require,module,exports) {
+},{"react":"4mchR","./useMountedState":"3gztc","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"24FnF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -27963,8 +27825,8 @@ function ensuredForwardRef(Component) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
-var defaultTarget = _util.isClient ? window : null;
+var _util = require("./misc/util");
+var defaultTarget = _util.isBrowser ? window : null;
 var isListenerType1 = function(target) {
     return !!target.addEventListener;
 };
@@ -27976,10 +27838,10 @@ var useEvent = function(name, handler, target, options) {
     _react.useEffect(function() {
         if (!handler) return;
         if (!target) return;
-        if (isListenerType1(target)) target.addEventListener(name, handler, options);
+        if (isListenerType1(target)) _util.on(target, name, handler, options);
         else if (isListenerType2(target)) target.on(name, handler, options);
         return function() {
-            if (isListenerType1(target)) target.removeEventListener(name, handler, options);
+            if (isListenerType1(target)) _util.off(target, name, handler, options);
             else if (isListenerType2(target)) target.off(name, handler, options);
         };
     }, [
@@ -27991,7 +27853,7 @@ var useEvent = function(name, handler, target, options) {
 };
 exports.default = useEvent;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"55xwd":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"55xwd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -28034,18 +27896,17 @@ var _screenfull = require("screenfull");
 var _screenfullDefault = parcelHelpers.interopDefault(_screenfull);
 var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
 var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
-var noop = function() {
-};
-var useFullscreen = function(ref, on, options) {
+var _util = require("./misc/util");
+var useFullscreen = function(ref, enabled, options) {
     if (options === void 0) options = {
     };
-    var video = options.video, _a = options.onClose, onClose = _a === void 0 ? noop : _a;
-    var _b = _react.useState(on), isFullscreen = _b[0], setIsFullscreen = _b[1];
+    var video = options.video, _a = options.onClose, onClose = _a === void 0 ? _util.noop : _a;
+    var _b = _react.useState(enabled), isFullscreen = _b[0], setIsFullscreen = _b[1];
     _useIsomorphicLayoutEffectDefault.default(function() {
-        if (!on) return;
+        if (!enabled) return;
         if (!ref.current) return;
         var onWebkitEndFullscreen = function() {
-            video.current.removeEventListener('webkitendfullscreen', onWebkitEndFullscreen);
+            if (video === null || video === void 0 ? void 0 : video.current) _util.off(video.current, 'webkitendfullscreen', onWebkitEndFullscreen);
             onClose();
         };
         var onChange = function() {
@@ -28066,7 +27927,7 @@ var useFullscreen = function(ref, on, options) {
             _screenfullDefault.default.on('change', onChange);
         } else if (video && video.current && video.current.webkitEnterFullscreen) {
             video.current.webkitEnterFullscreen();
-            video.current.addEventListener('webkitendfullscreen', onWebkitEndFullscreen);
+            _util.on(video.current, 'webkitendfullscreen', onWebkitEndFullscreen);
             setIsFullscreen(true);
         } else {
             onClose();
@@ -28080,12 +27941,12 @@ var useFullscreen = function(ref, on, options) {
             } catch (_a) {
             }
             else if (video && video.current && video.current.webkitExitFullscreen) {
-                video.current.removeEventListener('webkitendfullscreen', onWebkitEndFullscreen);
+                _util.off(video.current, 'webkitendfullscreen', onWebkitEndFullscreen);
                 video.current.webkitExitFullscreen();
             }
         };
     }, [
-        on,
+        enabled,
         video,
         ref
     ]);
@@ -28093,7 +27954,7 @@ var useFullscreen = function(ref, on, options) {
 };
 exports.default = useFullscreen;
 
-},{"react":"4mchR","screenfull":"2MDdb","./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"2MDdb":[function(require,module,exports) {
+},{"react":"4mchR","screenfull":"2MDdb","./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"2MDdb":[function(require,module,exports) {
 /*!
 * screenfull
 * v5.2.0 - 2021-11-03
@@ -28416,20 +28277,19 @@ var clearHarmonicInterval = function(_a) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var useState = _react.useState;
-var noop = function() {
-};
 var useHover = function(element) {
     var _a = useState(false), state = _a[0], setState = _a[1];
     var onMouseEnter = function(originalOnMouseEnter) {
         return function(event) {
-            (originalOnMouseEnter || noop)(event);
+            (originalOnMouseEnter || _util.noop)(event);
             setState(true);
         };
     };
     var onMouseLeave = function(originalOnMouseLeave) {
         return function(event) {
-            (originalOnMouseLeave || noop)(event);
+            (originalOnMouseLeave || _util.noop)(event);
             setState(false);
         };
     };
@@ -28445,10 +28305,11 @@ var useHover = function(element) {
 };
 exports.default = useHover;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"2FuTz":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"2FuTz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 // kudos: https://usehooks.com/
 var useHoverDirty = function(ref, enabled) {
     if (enabled === void 0) enabled = true;
@@ -28462,15 +28323,15 @@ var useHoverDirty = function(ref, enabled) {
             return setValue(false);
         };
         if (enabled && ref && ref.current) {
-            ref.current.addEventListener('mouseover', onMouseOver);
-            ref.current.addEventListener('mouseout', onMouseOut);
+            _util.on(ref.current, 'mouseover', onMouseOver);
+            _util.on(ref.current, 'mouseout', onMouseOut);
         }
         // fixes react-hooks/exhaustive-deps warning about stale ref elements
         var current = ref.current;
         return function() {
             if (enabled && current) {
-                current.removeEventListener('mouseover', onMouseOver);
-                current.removeEventListener('mouseout', onMouseOut);
+                _util.off(current, 'mouseover', onMouseOver);
+                _util.off(current, 'mouseout', onMouseOut);
             }
         };
     }, [
@@ -28481,12 +28342,12 @@ var useHoverDirty = function(ref, enabled) {
 };
 exports.default = useHoverDirty;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"g3Qvz":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"g3Qvz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _throttleDebounce = require("throttle-debounce");
-var _util = require("./util");
+var _util = require("./misc/util");
 var defaultEvents = [
     'mousemove',
     'mousedown',
@@ -28539,117 +28400,110 @@ var useIdle = function(ms, initialState, events) {
 };
 exports.default = useIdle;
 
-},{"react":"4mchR","throttle-debounce":"ajyEi","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ajyEi":[function(require,module,exports) {
-(function(global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) : typeof define === 'function' && define.amd ? define([
-        'exports'
-    ], factory) : (global = global || self, factory(global.throttleDebounce = {
-    }));
-})(this, function(exports) {
-    'use strict';
-    /* eslint-disable no-undefined,no-param-reassign,no-shadow */ /**
-	 * Throttle execution of a function. Especially useful for rate limiting
-	 * execution of handlers on events like resize and scroll.
-	 *
-	 * @param  {number}    delay -          A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
-	 * @param  {boolean}   [noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds while the
-	 *                                    throttled-function is being called. If noTrailing is false or unspecified, callback will be executed one final time
-	 *                                    after the last throttled-function call. (After the throttled-function has not been called for `delay` milliseconds,
-	 *                                    the internal counter is reset).
-	 * @param  {Function}  callback -       A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
-	 *                                    to `callback` when the throttled-function is executed.
-	 * @param  {boolean}   [debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is false (at end),
-	 *                                    schedule `callback` to execute after `delay` ms.
-	 *
-	 * @returns {Function}  A new, throttled, function.
-	 */ function throttle(delay, noTrailing, callback, debounceMode) {
-        /*
-	   * After wrapper has stopped being called, this timeout ensures that
-	   * `callback` is executed at the proper times in `throttle` and `end`
-	   * debounce modes.
-	   */ var timeoutID;
-        var cancelled = false; // Keep track of the last time `callback` was executed.
-        var lastExec = 0; // Function to clear existing timeout
-        function clearExistingTimeout() {
-            if (timeoutID) clearTimeout(timeoutID);
-        } // Function to cancel next exec
-        function cancel() {
-            clearExistingTimeout();
-            cancelled = true;
-        } // `noTrailing` defaults to falsy.
-        if (typeof noTrailing !== 'boolean') {
-            debounceMode = callback;
-            callback = noTrailing;
-            noTrailing = undefined;
+},{"react":"4mchR","throttle-debounce":"6nTa5","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"6nTa5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "debounce", ()=>debounce
+);
+parcelHelpers.export(exports, "throttle", ()=>throttle
+);
+/* eslint-disable no-undefined,no-param-reassign,no-shadow */ /**
+ * Throttle execution of a function. Especially useful for rate limiting
+ * execution of handlers on events like resize and scroll.
+ *
+ * @param  {number}    delay -          A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param  {boolean}   [noTrailing] -   Optional, defaults to false. If noTrailing is true, callback will only execute every `delay` milliseconds while the
+ *                                    throttled-function is being called. If noTrailing is false or unspecified, callback will be executed one final time
+ *                                    after the last throttled-function call. (After the throttled-function has not been called for `delay` milliseconds,
+ *                                    the internal counter is reset).
+ * @param  {Function}  callback -       A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                    to `callback` when the throttled-function is executed.
+ * @param  {boolean}   [debounceMode] - If `debounceMode` is true (at begin), schedule `clear` to execute after `delay` ms. If `debounceMode` is false (at end),
+ *                                    schedule `callback` to execute after `delay` ms.
+ *
+ * @returns {Function}  A new, throttled, function.
+ */ function throttle(delay, noTrailing, callback, debounceMode) {
+    /*
+   * After wrapper has stopped being called, this timeout ensures that
+   * `callback` is executed at the proper times in `throttle` and `end`
+   * debounce modes.
+   */ var timeoutID;
+    var cancelled = false; // Keep track of the last time `callback` was executed.
+    var lastExec = 0; // Function to clear existing timeout
+    function clearExistingTimeout() {
+        if (timeoutID) clearTimeout(timeoutID);
+    } // Function to cancel next exec
+    function cancel() {
+        clearExistingTimeout();
+        cancelled = true;
+    } // `noTrailing` defaults to falsy.
+    if (typeof noTrailing !== 'boolean') {
+        debounceMode = callback;
+        callback = noTrailing;
+        noTrailing = undefined;
+    }
+    /*
+   * The `wrapper` function encapsulates all of the throttling / debouncing
+   * functionality and when executed will limit the rate at which `callback`
+   * is executed.
+   */ function wrapper() {
+        for(var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++)arguments_[_key] = arguments[_key];
+        var self = this;
+        var elapsed = Date.now() - lastExec;
+        if (cancelled) return;
+         // Execute `callback` and update the `lastExec` timestamp.
+        function exec() {
+            lastExec = Date.now();
+            callback.apply(self, arguments_);
         }
         /*
-	   * The `wrapper` function encapsulates all of the throttling / debouncing
-	   * functionality and when executed will limit the rate at which `callback`
-	   * is executed.
-	   */ function wrapper() {
-            for(var _len = arguments.length, arguments_ = new Array(_len), _key = 0; _key < _len; _key++)arguments_[_key] = arguments[_key];
-            var self = this;
-            var elapsed = Date.now() - lastExec;
-            if (cancelled) return;
-             // Execute `callback` and update the `lastExec` timestamp.
-            function exec() {
-                lastExec = Date.now();
-                callback.apply(self, arguments_);
-            }
-            /*
-	     * If `debounceMode` is true (at begin) this is used to clear the flag
-	     * to allow future `callback` executions.
-	     */ function clear() {
-                timeoutID = undefined;
-            }
-            if (debounceMode && !timeoutID) /*
-	       * Since `wrapper` is being called for the first time and
-	       * `debounceMode` is true (at begin), execute `callback`.
-	       */ exec();
-            clearExistingTimeout();
-            if (debounceMode === undefined && elapsed > delay) /*
-	       * In throttle mode, if `delay` time has been exceeded, execute
-	       * `callback`.
-	       */ exec();
-            else if (noTrailing !== true) /*
-	       * In trailing throttle mode, since `delay` time has not been
-	       * exceeded, schedule `callback` to execute `delay` ms after most
-	       * recent execution.
-	       *
-	       * If `debounceMode` is true (at begin), schedule `clear` to execute
-	       * after `delay` ms.
-	       *
-	       * If `debounceMode` is false (at end), schedule `callback` to
-	       * execute after `delay` ms.
-	       */ timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
+     * If `debounceMode` is true (at begin) this is used to clear the flag
+     * to allow future `callback` executions.
+     */ function clear() {
+            timeoutID = undefined;
         }
-        wrapper.cancel = cancel; // Return the wrapper function.
-        return wrapper;
+        if (debounceMode && !timeoutID) /*
+       * Since `wrapper` is being called for the first time and
+       * `debounceMode` is true (at begin), execute `callback`.
+       */ exec();
+        clearExistingTimeout();
+        if (debounceMode === undefined && elapsed > delay) /*
+       * In throttle mode, if `delay` time has been exceeded, execute
+       * `callback`.
+       */ exec();
+        else if (noTrailing !== true) /*
+       * In trailing throttle mode, since `delay` time has not been
+       * exceeded, schedule `callback` to execute `delay` ms after most
+       * recent execution.
+       *
+       * If `debounceMode` is true (at begin), schedule `clear` to execute
+       * after `delay` ms.
+       *
+       * If `debounceMode` is false (at end), schedule `callback` to
+       * execute after `delay` ms.
+       */ timeoutID = setTimeout(debounceMode ? clear : exec, debounceMode === undefined ? delay - elapsed : delay);
     }
-    /* eslint-disable no-undefined */ /**
-	 * Debounce execution of a function. Debouncing, unlike throttling,
-	 * guarantees that a function is only executed a single time, either at the
-	 * very beginning of a series of calls, or at the very end.
-	 *
-	 * @param  {number}   delay -         A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
-	 * @param  {boolean}  [atBegin] -     Optional, defaults to false. If atBegin is false or unspecified, callback will only be executed `delay` milliseconds
-	 *                                  after the last debounced-function call. If atBegin is true, callback will be executed only at the first debounced-function call.
-	 *                                  (After the throttled-function has not been called for `delay` milliseconds, the internal counter is reset).
-	 * @param  {Function} callback -      A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
-	 *                                  to `callback` when the debounced-function is executed.
-	 *
-	 * @returns {Function} A new, debounced function.
-	 */ function debounce(delay, atBegin, callback) {
-        return callback === undefined ? throttle(delay, atBegin, false) : throttle(delay, callback, atBegin !== false);
-    }
-    exports.debounce = debounce;
-    exports.throttle = throttle;
-    Object.defineProperty(exports, '__esModule', {
-        value: true
-    });
-});
+    wrapper.cancel = cancel; // Return the wrapper function.
+    return wrapper;
+}
+/* eslint-disable no-undefined */ /**
+ * Debounce execution of a function. Debouncing, unlike throttling,
+ * guarantees that a function is only executed a single time, either at the
+ * very beginning of a series of calls, or at the very end.
+ *
+ * @param  {number}   delay -         A zero-or-greater delay in milliseconds. For event callbacks, values around 100 or 250 (or even higher) are most useful.
+ * @param  {boolean}  [atBegin] -     Optional, defaults to false. If atBegin is false or unspecified, callback will only be executed `delay` milliseconds
+ *                                  after the last debounced-function call. If atBegin is true, callback will be executed only at the first debounced-function call.
+ *                                  (After the throttled-function has not been called for `delay` milliseconds, the internal counter is reset).
+ * @param  {Function} callback -      A function to be executed after delay milliseconds. The `this` context and all arguments are passed through, as-is,
+ *                                  to `callback` when the debounced-function is executed.
+ *
+ * @returns {Function} A new, debounced function.
+ */ function debounce(delay, atBegin, callback) {
+    return callback === undefined ? throttle(delay, atBegin, false) : throttle(delay, callback, atBegin !== false);
+}
 
-},{}],"iEihF":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"iEihF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -28711,8 +28565,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useEvent = require("./useEvent");
 var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
-var noop = function() {
-};
+var _util = require("./misc/util");
 var createKeyPredicate = function(keyFilter) {
     return typeof keyFilter === 'function' ? keyFilter : typeof keyFilter === 'string' ? function(event) {
         return event.key === keyFilter;
@@ -28723,7 +28576,7 @@ var createKeyPredicate = function(keyFilter) {
     };
 };
 var useKey = function(key, fn, opts, deps) {
-    if (fn === void 0) fn = noop;
+    if (fn === void 0) fn = _util.noop;
     if (opts === void 0) opts = {
     };
     if (deps === void 0) deps = [
@@ -28741,46 +28594,7 @@ var useKey = function(key, fn, opts, deps) {
 };
 exports.default = useKey;
 
-},{"react":"4mchR","./useEvent":"afvLw","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"5ccjL":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var createBreakpoint = function(breakpoints) {
-    if (breakpoints === void 0) breakpoints = {
-        laptopL: 1440,
-        laptop: 1024,
-        tablet: 768
-    };
-    return function() {
-        var _a1 = _react.useState(0), screen = _a1[0], setScreen = _a1[1];
-        _react.useEffect(function() {
-            var setSideScreen = function() {
-                setScreen(window.innerWidth);
-            };
-            setSideScreen();
-            window.addEventListener('resize', setSideScreen);
-            return function() {
-                window.removeEventListener('resize', setSideScreen);
-            };
-        });
-        var sortedBreakpoints = _react.useMemo(function() {
-            return Object.entries(breakpoints).sort(function(a, b) {
-                return a[1] >= b[1] ? 1 : -1;
-            });
-        }, [
-            breakpoints, 
-        ]);
-        var result = sortedBreakpoints.reduce(function(acc, _a) {
-            var name = _a[0], width = _a[1];
-            if (screen >= width) return name;
-            else return acc;
-        }, sortedBreakpoints[0][0]);
-        return result;
-    };
-};
-exports.default = createBreakpoint;
-
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"emkSE":[function(require,module,exports) {
+},{"react":"4mchR","./useEvent":"afvLw","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"emkSE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -28834,7 +28648,35 @@ var useKeyPressEvent = function(key, keydown, keyup, useKeyPress) {
 };
 exports.default = useKeyPressEvent;
 
-},{"./useKeyPress":"emkSE","./useUpdateEffect":"831mN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"lh7Vr":[function(require,module,exports) {
+},{"./useKeyPress":"emkSE","./useUpdateEffect":"831mN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"831mN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _useFirstMountState = require("./useFirstMountState");
+var useUpdateEffect = function(effect, deps) {
+    var isFirstMount = _useFirstMountState.useFirstMountState();
+    _react.useEffect(function() {
+        if (!isFirstMount) return effect();
+    }, deps);
+};
+exports.default = useUpdateEffect;
+
+},{"react":"4mchR","./useFirstMountState":"6CMvr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"6CMvr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useFirstMountState", ()=>useFirstMountState
+);
+var _react = require("react");
+function useFirstMountState() {
+    var isFirst = _react.useRef(true);
+    if (isFirst.current) {
+        isFirst.current = false;
+        return true;
+    }
+    return isFirst.current;
+}
+
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"lh7Vr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -28865,15 +28707,15 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useUpdate = require("./useUpdate");
 var _useUpdateDefault = parcelHelpers.interopDefault(_useUpdate);
-var _resolveHookState = require("./util/resolveHookState");
+var _hookState = require("./misc/hookState");
 function useList(initialList) {
     if (initialList === void 0) initialList = [];
-    var list = _react.useRef(_resolveHookState.resolveHookState(initialList));
+    var list = _react.useRef(_hookState.resolveHookState(initialList));
     var update = _useUpdateDefault.default();
     var actions = _react.useMemo(function() {
         var a = {
             set: function(newList) {
-                list.current = _resolveHookState.resolveHookState(newList, list.current);
+                list.current = _hookState.resolveHookState(newList, list.current);
                 update();
             },
             push: function() {
@@ -28937,7 +28779,7 @@ function useList(initialList) {
                 actions.set([]);
             },
             reset: function() {
-                actions.set(_resolveHookState.resolveHookState(initialList).slice());
+                actions.set(_hookState.resolveHookState(initialList).slice());
             }
         };
         /**
@@ -28952,25 +28794,23 @@ function useList(initialList) {
 }
 exports.default = useList;
 
-},{"react":"4mchR","./useUpdate":"jfCN9","./util/resolveHookState":"9neMX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gqDM5":[function(require,module,exports) {
+},{"react":"4mchR","./useUpdate":"jfCN9","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/hookState":"i84Eh"}],"gqDM5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
-var noop = function() {
-};
-var useLocalStorage = function(key, initialValue, options) {
-    if (!_util.isClient) return [
+var _util = require("./misc/util");
+var useLocalStorage = function(key1, initialValue, options) {
+    if (!_util.isBrowser) return [
         initialValue,
-        noop,
-        noop
+        _util.noop,
+        _util.noop
     ];
-    if (!key) throw new Error('useLocalStorage key may not be falsy');
+    if (!key1) throw new Error('useLocalStorage key may not be falsy');
     var deserializer = options ? options.raw ? function(value) {
         return value;
     } : options.deserializer : JSON.parse;
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    var _a = _react.useState(function() {
+    var initializer = _react.useRef(function(key) {
         try {
             var serializer = options ? options.raw ? String : options.serializer : JSON.stringify;
             var localStorageValue = localStorage.getItem(key);
@@ -28985,7 +28825,17 @@ var useLocalStorage = function(key, initialValue, options) {
             // can throw, too.
             return initialValue;
         }
+    });
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    var _a = _react.useState(function() {
+        return initializer.current(key1);
     }), state = _a[0], setState = _a[1];
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    _react.useLayoutEffect(function() {
+        return setState(initializer.current(key1));
+    }, [
+        key1
+    ]);
     // eslint-disable-next-line react-hooks/rules-of-hooks
     var set = _react.useCallback(function(valOrFunc) {
         try {
@@ -28999,27 +28849,27 @@ var useLocalStorage = function(key, initialValue, options) {
                 } else if (options.serializer) value = options.serializer(newState);
                 else value = JSON.stringify(newState);
             } else value = JSON.stringify(newState);
-            localStorage.setItem(key, value);
+            localStorage.setItem(key1, value);
             setState(deserializer(value));
         } catch (_a) {
         // If user is in private mode or has storage restriction
         // localStorage can throw. Also JSON.stringify can throw.
         }
     }, [
-        key,
+        key1,
         setState
     ]);
     // eslint-disable-next-line react-hooks/rules-of-hooks
     var remove = _react.useCallback(function() {
         try {
-            localStorage.removeItem(key);
+            localStorage.removeItem(key1);
             setState(undefined);
         } catch (_a) {
         // If user is in private mode or has storage restriction
         // localStorage can throw.
         }
     }, [
-        key,
+        key1,
         setState
     ]);
     return [
@@ -29030,11 +28880,11 @@ var useLocalStorage = function(key, initialValue, options) {
 };
 exports.default = useLocalStorage;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8QVCb":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"8QVCb":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var patchHistoryMethod = function(method) {
     var history = window.history;
     var original = history[method];
@@ -29046,7 +28896,7 @@ var patchHistoryMethod = function(method) {
         return result;
     };
 };
-if (_util.isClient) {
+if (_util.isBrowser) {
     patchHistoryMethod('pushState');
     patchHistoryMethod('replaceState');
 }
@@ -29098,14 +28948,15 @@ var useLocationBrowser = function() {
     return state;
 };
 var hasEventConstructor = typeof Event === 'function';
-exports.default = _util.isClient && hasEventConstructor ? useLocationBrowser : useLocationServer;
+exports.default = _util.isBrowser && hasEventConstructor ? useLocationBrowser : useLocationServer;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gVhRl":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"gVhRl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getClosestBody", ()=>getClosestBody
 );
 var _react = require("react");
+var _util = require("./misc/util");
 function getClosestBody(el) {
     if (!el) return null;
     else if (el.tagName === 'BODY') return el;
@@ -29122,7 +28973,7 @@ function preventDefault(rawEvent) {
     if (e.preventDefault) e.preventDefault();
     return false;
 }
-var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && /iP(ad|hone|od)/.test(window.navigator.platform);
+var isIosDevice = _util.isBrowser && window.navigator && window.navigator.platform && /iP(ad|hone|od)/.test(window.navigator.platform);
 var bodies = new Map();
 var doc = typeof document === 'object' ? document : undefined;
 var documentListenerAdded = false;
@@ -29141,7 +28992,7 @@ exports.default = !doc ? function useLockBodyMock(_locked, _elementRef) {
             });
             if (isIosDevice) {
                 if (!documentListenerAdded) {
-                    document.addEventListener('touchmove', preventDefault, {
+                    _util.on(document, 'touchmove', preventDefault, {
                         passive: false
                     });
                     documentListenerAdded = true;
@@ -29160,7 +29011,7 @@ exports.default = !doc ? function useLockBodyMock(_locked, _elementRef) {
                 if (isIosDevice) {
                     body.ontouchmove = null;
                     if (documentListenerAdded) {
-                        document.removeEventListener('touchmove', preventDefault);
+                        _util.off(document, 'touchmove', preventDefault);
                         documentListenerAdded = false;
                     }
                 } else body.style.overflow = bodyInfo.initialOverflow;
@@ -29189,7 +29040,7 @@ exports.default = !doc ? function useLockBodyMock(_locked, _elementRef) {
     }, []);
 };
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"eIdep":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"eIdep":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
@@ -29220,6 +29071,7 @@ exports.default = useLogger;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var isTouchEvent = function(ev) {
     return 'touches' in ev;
 };
@@ -29235,7 +29087,7 @@ var useLongPress = function(callback, _a) {
     var start = _react.useCallback(function(event) {
         // prevent ghost click on mobile devices
         if (isPreventDefault && event.target) {
-            event.target.addEventListener('touchend', preventDefault, {
+            _util.on(event.target, 'touchend', preventDefault, {
                 passive: false
             });
             target.current = event.target;
@@ -29251,7 +29103,7 @@ var useLongPress = function(callback, _a) {
     var clear = _react.useCallback(function() {
         // clearTimeout and removeEventListener
         timeout.current && clearTimeout(timeout.current);
-        if (isPreventDefault && target.current) target.current.removeEventListener('touchend', preventDefault);
+        if (isPreventDefault && target.current) _util.off(target.current, 'touchend', preventDefault);
     }, [
         isPreventDefault
     ]);
@@ -29269,7 +29121,7 @@ var useLongPress = function(callback, _a) {
 };
 exports.default = useLongPress;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"icWSc":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"icWSc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
@@ -29324,10 +29176,10 @@ exports.default = useMap;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var useMedia = function(query, defaultState) {
     if (defaultState === void 0) defaultState = false;
-    var _a = _react.useState(_util.isClient ? function() {
+    var _a = _react.useState(_util.isBrowser ? function() {
         return window.matchMedia(query).matches;
     } : defaultState), state = _a[0], setState = _a[1];
     _react.useEffect(function() {
@@ -29350,13 +29202,11 @@ var useMedia = function(query, defaultState) {
 };
 exports.default = useMedia;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"kR5Nz":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"kR5Nz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
-var noop = function() {
-};
+var _util = require("./misc/util");
 var useMediaDevices = function() {
     var _a1 = _react.useState({
     }), state = _a1[0], setState = _a1[1];
@@ -29375,7 +29225,7 @@ var useMediaDevices = function() {
                         };
                     })
                 });
-            }).catch(noop);
+            }).catch(_util.noop);
         };
         _util.on(navigator.mediaDevices, 'devicechange', onChange);
         onChange();
@@ -29390,9 +29240,9 @@ var useMediaDevicesMock = function() {
     return {
     };
 };
-exports.default = typeof navigator === 'object' && !!navigator.mediaDevices ? useMediaDevices : useMediaDevicesMock;
+exports.default = _util.isNavigator && !!navigator.mediaDevices ? useMediaDevices : useMediaDevicesMock;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"eUPLv":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"eUPLv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useMediatedState", ()=>useMediatedState
@@ -29456,7 +29306,7 @@ exports.default = useMethods;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var defaultState = {
     acceleration: {
         x: null,
@@ -29509,7 +29359,7 @@ var useMotion = function(initialState) {
 };
 exports.default = useMotion;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"k4vVz":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"k4vVz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useEffectOnce = require("./useEffectOnce");
@@ -29527,6 +29377,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useRafState = require("./useRafState");
 var _useRafStateDefault = parcelHelpers.interopDefault(_useRafState);
+var _util = require("./misc/util");
 var useMouse = function(ref) {
     if (typeof ref !== 'object' || typeof ref.current === 'undefined') console.error('useMouse expects a single ref argument.');
     var _a1 = _useRafStateDefault.default({
@@ -29559,9 +29410,9 @@ var useMouse = function(ref) {
                 });
             }
         };
-        document.addEventListener('mousemove', moveHandler);
+        _util.on(document, 'mousemove', moveHandler);
         return function() {
-            document.removeEventListener('mousemove', moveHandler);
+            _util.off(document, 'mousemove', moveHandler);
         };
     }, [
         ref
@@ -29570,7 +29421,7 @@ var useMouse = function(ref) {
 };
 exports.default = useMouse;
 
-},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"GgmUD":[function(require,module,exports) {
+},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"GgmUD":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -29642,92 +29493,22 @@ exports.default = useMouseHovered;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 exports.default = function() {
     var _a = _react.useState(0), mouseWheelScrolled = _a[0], setMouseWheelScrolled = _a[1];
     _react.useEffect(function() {
         var updateScroll = function(e) {
             setMouseWheelScrolled(e.deltaY + mouseWheelScrolled);
         };
-        window.addEventListener('wheel', updateScroll, false);
+        _util.on(window, 'wheel', updateScroll, false);
         return function() {
-            return window.removeEventListener('wheel', updateScroll);
+            return _util.off(window, 'wheel', updateScroll);
         };
     });
     return mouseWheelScrolled;
 };
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"cITMH":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _tslib = require("tslib");
-var _react = require("react");
-var _util = require("./util");
-var getConnection = function() {
-    if (typeof navigator !== 'object') return null;
-    var nav = navigator;
-    return nav.connection || nav.mozConnection || nav.webkitConnection;
-};
-var getConnectionState = function() {
-    var connection = getConnection();
-    if (!connection) return {
-    };
-    var downlink = connection.downlink, downlinkMax = connection.downlinkMax, effectiveType = connection.effectiveType, type = connection.type, rtt = connection.rtt;
-    return {
-        downlink: downlink,
-        downlinkMax: downlinkMax,
-        effectiveType: effectiveType,
-        type: type,
-        rtt: rtt
-    };
-};
-var useNetwork = function(initialState) {
-    if (initialState === void 0) initialState = {
-    };
-    var _a = _react.useState(initialState), state = _a[0], setState = _a[1];
-    _react.useEffect(function() {
-        var localState = state;
-        var localSetState = function(patch) {
-            localState = _tslib.__assign(_tslib.__assign({
-            }, localState), patch);
-            setState(localState);
-        };
-        var connection = getConnection();
-        var onOnline = function() {
-            localSetState({
-                online: true,
-                since: new Date()
-            });
-        };
-        var onOffline = function() {
-            localSetState({
-                online: false,
-                since: new Date()
-            });
-        };
-        var onConnectionChange = function() {
-            localSetState(getConnectionState());
-        };
-        _util.on(window, 'online', onOnline);
-        _util.on(window, 'offline', onOffline);
-        if (connection) {
-            _util.on(connection, 'change', onConnectionChange);
-            localSetState(_tslib.__assign(_tslib.__assign(_tslib.__assign({
-            }, state), {
-                online: navigator.onLine,
-                since: undefined
-            }), getConnectionState()));
-        }
-        return function() {
-            _util.off(window, 'online', onOnline);
-            _util.off(window, 'offline', onOffline);
-            if (connection) _util.off(connection, 'change', onConnectionChange);
-        };
-    }, []);
-    return state;
-};
-exports.default = useNetwork;
-
-},{"tslib":"j55WF","react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"Km4dU":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"Km4dU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useCounter = require("./useCounter");
@@ -29758,16 +29539,16 @@ exports.default = useObservable;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var defaultState = {
     angle: 0,
     type: 'landscape-primary'
 };
 var useOrientation = function(initialState) {
     if (initialState === void 0) initialState = defaultState;
-    var screen = window.screen;
     var _a = _react.useState(initialState), state = _a[0], setState = _a[1];
     _react.useEffect(function() {
+        var screen = window.screen;
         var mounted = true;
         var onChange = function() {
             if (mounted) {
@@ -29778,7 +29559,7 @@ var useOrientation = function(initialState) {
                         angle: angle,
                         type: type
                     });
-                } else if (window.orientation) setState({
+                } else if (window.orientation !== undefined) setState({
                     angle: typeof window.orientation === 'number' ? window.orientation : 0,
                     type: ''
                 });
@@ -29796,10 +29577,11 @@ var useOrientation = function(initialState) {
 };
 exports.default = useOrientation;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"bYaNt":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"bYaNt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var usePageLeave = function(onPageLeave, args) {
     if (args === void 0) args = [];
     _react.useEffect(function() {
@@ -29809,47 +29591,50 @@ var usePageLeave = function(onPageLeave, args) {
             var from = event.relatedTarget || event.toElement;
             if (!from || from.nodeName === 'HTML') onPageLeave();
         };
-        document.addEventListener('mouseout', handler);
+        _util.on(document, 'mouseout', handler);
         return function() {
-            document.removeEventListener('mouseout', handler);
+            _util.off(document, 'mouseout', handler);
         };
     }, args);
 };
 exports.default = usePageLeave;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"i3Lc8":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"i3Lc8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
-var noop = function() {
-};
+var _util = require("./misc/util");
+// const usePermission = <T extends PermissionDescriptor>(permissionDesc: T): IState => {
 var usePermission = function(permissionDesc) {
-    var mounted = true;
-    var permissionStatus = null;
-    var _a = _react.useState(''), state = _a[0], setState = _a[1];
-    var onChange = function() {
-        if (mounted && permissionStatus) setState(permissionStatus.state);
-    };
-    var changeState = function() {
-        onChange();
-        _util.on(permissionStatus, 'change', onChange);
-    };
+    var _a1 = _react.useState(''), state = _a1[0], setState = _a1[1];
     _react.useEffect(function() {
+        var mounted = true;
+        var permissionStatus = null;
+        var onChange = function() {
+            if (!mounted) return;
+            setState(function() {
+                var _a;
+                return (_a = permissionStatus === null || permissionStatus === void 0 ? void 0 : permissionStatus.state) !== null && _a !== void 0 ? _a : '';
+            });
+        };
         navigator.permissions.query(permissionDesc).then(function(status) {
             permissionStatus = status;
-            changeState();
-        }).catch(noop);
+            _util.on(permissionStatus, 'change', onChange);
+            onChange();
+        }).catch(_util.noop);
         return function() {
-            mounted = false;
             permissionStatus && _util.off(permissionStatus, 'change', onChange);
+            mounted = false;
+            permissionStatus = null;
         };
-    }, []);
+    }, [
+        permissionDesc
+    ]);
     return state;
 };
 exports.default = usePermission;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8oxGH":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"8oxGH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -30037,6 +29822,7 @@ exports.default = useRafLoop;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var getValue = function(search, param) {
     return new URLSearchParams(search).get(param);
 };
@@ -30049,13 +29835,13 @@ var useSearchParam = function(param) {
         var onChange = function() {
             setValue(getValue(location.search, param));
         };
-        window.addEventListener('popstate', onChange);
-        window.addEventListener('pushstate', onChange);
-        window.addEventListener('replacestate', onChange);
+        _util.on(window, 'popstate', onChange);
+        _util.on(window, 'pushstate', onChange);
+        _util.on(window, 'replacestate', onChange);
         return function() {
-            window.removeEventListener('popstate', onChange);
-            window.removeEventListener('pushstate', onChange);
-            window.removeEventListener('replacestate', onChange);
+            _util.off(window, 'popstate', onChange);
+            _util.off(window, 'pushstate', onChange);
+            _util.off(window, 'replacestate', onChange);
         };
     }, []);
     return value;
@@ -30063,9 +29849,9 @@ var useSearchParam = function(param) {
 var useSearchParamServer = function() {
     return null;
 };
-exports.default = typeof window === 'object' ? useSearchParam : useSearchParamServer;
+exports.default = _util.isBrowser ? useSearchParam : useSearchParamServer;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7SPuv":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"7SPuv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ScratchSensor", ()=>ScratchSensor
@@ -30075,8 +29861,7 @@ var _react = require("react");
 var _reactUniversalInterface = require("react-universal-interface");
 var _useLatest = require("./useLatest");
 var _useLatestDefault = parcelHelpers.interopDefault(_useLatest);
-var noop = function() {
-};
+var _util = require("./misc/util");
 var useScratch = function(params) {
     if (params === void 0) params = {
     };
@@ -30109,7 +29894,7 @@ var useScratch = function(params) {
                         isScratching: true
                     });
                     refState.current = newState;
-                    (paramsRef.current.onScratch || noop)(newState);
+                    (paramsRef.current.onScratch || _util.noop)(newState);
                     return newState;
                 });
             });
@@ -30129,14 +29914,14 @@ var useScratch = function(params) {
             }, refState.current), {
                 isScratching: false
             });
-            (paramsRef.current.onScratchEnd || noop)(refState.current);
+            (paramsRef.current.onScratchEnd || _util.noop)(refState.current);
             setState({
                 isScratching: false
             });
-            window.removeEventListener('mousemove', onMouseMove);
-            window.removeEventListener('touchmove', onTouchMove);
-            window.removeEventListener('mouseup', onMouseUp);
-            window.removeEventListener('touchend', onTouchEnd);
+            _util.off(window, 'mousemove', onMouseMove);
+            _util.off(window, 'touchmove', onTouchMove);
+            _util.off(window, 'mouseup', onMouseUp);
+            _util.off(window, 'touchend', onTouchEnd);
         };
         onMouseUp = stopScratching;
         onTouchEnd = stopScratching;
@@ -30164,12 +29949,12 @@ var useScratch = function(params) {
                 elY: elY
             };
             refState.current = newState;
-            (paramsRef.current.onScratchStart || noop)(newState);
+            (paramsRef.current.onScratchStart || _util.noop)(newState);
             setState(newState);
-            window.addEventListener('mousemove', onMouseMove);
-            window.addEventListener('touchmove', onTouchMove);
-            window.addEventListener('mouseup', onMouseUp);
-            window.addEventListener('touchend', onTouchEnd);
+            _util.on(window, 'mousemove', onMouseMove);
+            _util.on(window, 'touchmove', onTouchMove);
+            _util.on(window, 'mouseup', onMouseUp);
+            _util.on(window, 'touchend', onTouchEnd);
         };
         var onMouseDown = function(event) {
             refScratching.current = true;
@@ -30179,15 +29964,15 @@ var useScratch = function(params) {
             refScratching.current = true;
             startScratching(event.changedTouches[0].pageX, event.changedTouches[0].pageY);
         };
-        el.addEventListener('mousedown', onMouseDown);
-        el.addEventListener('touchstart', onTouchStart);
+        _util.on(el, 'mousedown', onMouseDown);
+        _util.on(el, 'touchstart', onTouchStart);
         return function() {
-            el.removeEventListener('mousedown', onMouseDown);
-            el.removeEventListener('touchstart', onTouchStart);
-            window.removeEventListener('mousemove', onMouseMove);
-            window.removeEventListener('touchmove', onTouchMove);
-            window.removeEventListener('mouseup', onMouseUp);
-            window.removeEventListener('touchend', onTouchEnd);
+            _util.off(el, 'mousedown', onMouseDown);
+            _util.off(el, 'touchstart', onTouchStart);
+            _util.off(window, 'mousemove', onMouseMove);
+            _util.off(window, 'touchmove', onTouchMove);
+            _util.off(window, 'mouseup', onMouseUp);
+            _util.off(window, 'touchend', onTouchEnd);
             if (refAnimationFrame.current) cancelAnimationFrame(refAnimationFrame.current);
             refAnimationFrame.current = null;
             refScratching.current = false;
@@ -30225,7 +30010,7 @@ var ScratchSensor = function(props) {
 };
 exports.default = useScratch;
 
-},{"tslib":"j55WF","react":"4mchR","react-universal-interface":"6ng0b","./useLatest":"lh7Vr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"6ng0b":[function(require,module,exports) {
+},{"tslib":"j55WF","react":"4mchR","react-universal-interface":"6ng0b","./useLatest":"lh7Vr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"6ng0b":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -30387,6 +30172,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useRafState = require("./useRafState");
 var _useRafStateDefault = parcelHelpers.interopDefault(_useRafState);
+var _util = require("./misc/util");
 var useScroll = function(ref) {
     if (typeof ref !== 'object' || typeof ref.current === 'undefined') console.error('`useScroll` expects a single ref argument.');
     var _a = _useRafStateDefault.default({
@@ -30400,12 +30186,12 @@ var useScroll = function(ref) {
                 y: ref.current.scrollTop
             });
         };
-        if (ref.current) ref.current.addEventListener('scroll', handler, {
+        if (ref.current) _util.on(ref.current, 'scroll', handler, {
             capture: false,
             passive: true
         });
         return function() {
-            if (ref.current) ref.current.removeEventListener('scroll', handler);
+            if (ref.current) _util.off(ref.current, 'scroll', handler);
         };
     }, [
         ref
@@ -30414,10 +30200,11 @@ var useScroll = function(ref) {
 };
 exports.default = useScroll;
 
-},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7Moct":[function(require,module,exports) {
+},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"7Moct":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _util = require("./misc/util");
 var useScrolling = function(ref) {
     var _a = _react.useState(false), scrolling = _a[0], setScrolling = _a[1];
     _react.useEffect(function() {
@@ -30433,9 +30220,9 @@ var useScrolling = function(ref) {
                     return handleScrollEnd_1();
                 }, 150);
             };
-            ref.current.addEventListener('scroll', handleScroll_1, false);
+            _util.on(ref.current, 'scroll', handleScroll_1, false);
             return function() {
-                if (ref.current) ref.current.removeEventListener('scroll', handleScroll_1, false);
+                if (ref.current) _util.off(ref.current, 'scroll', handleScroll_1, false);
             };
         }
         return function() {
@@ -30447,13 +30234,13 @@ var useScrolling = function(ref) {
 };
 exports.default = useScrolling;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1YWgd":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"1YWgd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var useSessionStorage = function(key, initialValue, raw) {
-    if (!_util.isClient) return [
+    if (!_util.isBrowser) return [
         initialValue,
         function() {
         }
@@ -30490,7 +30277,7 @@ var useSessionStorage = function(key, initialValue, raw) {
 };
 exports.default = useSessionStorage;
 
-},{"react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"70xNH":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"70xNH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _fastShallowEqual = require("fast-shallow-equal");
@@ -30528,7 +30315,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var useState = _react.useState, useEffect = _react.useEffect, useRef = _react.useRef;
 var DRAF = function(callback) {
     return setTimeout(callback, 35);
@@ -30536,7 +30323,7 @@ var DRAF = function(callback) {
 var useSize = function(element, _a) {
     var _b = _a === void 0 ? {
     } : _a, _c = _b.width, width = _c === void 0 ? Infinity : _c, _d = _b.height, height = _d === void 0 ? Infinity : _d;
-    if (!_util.isClient) return [
+    if (!_util.isBrowser) return [
         typeof element === 'function' ? element({
             width: width,
             height: height
@@ -30544,7 +30331,7 @@ var useSize = function(element, _a) {
         {
             width: width,
             height: height
-        }
+        }, 
     ];
     // eslint-disable-next-line react-hooks/rules-of-hooks
     var _e = useState({
@@ -30569,7 +30356,7 @@ var useSize = function(element, _a) {
         setState(size);
     };
     var onWindow = function(windowToListenOn) {
-        windowToListenOn.addEventListener('resize', setSize);
+        _util.on(windowToListenOn, 'resize', setSize);
         DRAF(setSize);
     };
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -30582,14 +30369,14 @@ var useSize = function(element, _a) {
             onWindow(window);
         } else {
             var onLoad_1 = function() {
-                iframe.removeEventListener('load', onLoad_1);
+                _util.on(iframe, 'load', onLoad_1);
                 window = iframe.contentWindow;
                 onWindow(window);
             };
-            iframe.addEventListener('load', onLoad_1);
+            _util.off(iframe, 'load', onLoad_1);
         }
         return function() {
-            if (window && window.removeEventListener) window.removeEventListener('resize', setSize);
+            if (window && window.removeEventListener) _util.off(window, 'resize', setSize);
         };
     }, []);
     style.position = 'relative';
@@ -30620,17 +30407,15 @@ var useSize = function(element, _a) {
 };
 exports.default = useSize;
 
-},{"tslib":"j55WF","react":"4mchR","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8mZgr":[function(require,module,exports) {
+},{"tslib":"j55WF","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"8mZgr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var _useMountedState = require("./useMountedState");
 var _useMountedStateDefault = parcelHelpers.interopDefault(_useMountedState);
 var _useSetState = require("./useSetState");
 var _useSetStateDefault = parcelHelpers.interopDefault(_useSetState);
-var noop = function() {
-};
 var useSlider = function(ref, options) {
     if (options === void 0) options = {
     };
@@ -30644,13 +30429,13 @@ var useSlider = function(ref, options) {
     }), state = _a[0], setState = _a[1];
     valueRef.current = state.value;
     _react.useEffect(function() {
-        if (_util.isClient) {
+        if (_util.isBrowser) {
             var styles = options.styles === undefined ? true : options.styles;
             var reverse_1 = options.reverse === undefined ? false : options.reverse;
             if (ref.current && styles) ref.current.style.userSelect = 'none';
             var startScrubbing_1 = function() {
                 if (!isSliding.current && isMounted()) {
-                    (options.onScrubStart || noop)();
+                    (options.onScrubStart || _util.noop)();
                     isSliding.current = true;
                     setState({
                         isSliding: true
@@ -30660,7 +30445,7 @@ var useSlider = function(ref, options) {
             };
             var stopScrubbing_1 = function() {
                 if (isSliding.current && isMounted()) {
-                    (options.onScrubStop || noop)(valueRef.current);
+                    (options.onScrubStop || _util.noop)(valueRef.current);
                     isSliding.current = false;
                     setState({
                         isSliding: false
@@ -30714,7 +30499,7 @@ var useSlider = function(ref, options) {
                         setState({
                             value: value
                         });
-                        (options.onScrub || noop)(value);
+                        (options.onScrub || _util.noop)(value);
                     }
                 });
             };
@@ -30733,66 +30518,94 @@ var useSlider = function(ref, options) {
 };
 exports.default = useSlider;
 
-},{"react":"4mchR","./util":"b7OTp","./useMountedState":"3gztc","./useSetState":"jKWo0","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"d3lH5":[function(require,module,exports) {
+},{"react":"4mchR","./useMountedState":"3gztc","./useSetState":"jKWo0","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"d3lH5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _tslib = require("tslib");
 var _react = require("react");
-var _useMount = require("./useMount");
-var _useMountDefault = parcelHelpers.interopDefault(_useMount);
-var _useSetState = require("./useSetState");
-var _useSetStateDefault = parcelHelpers.interopDefault(_useSetState);
-var voices = typeof window === 'object' && typeof window.speechSynthesis === 'object' ? window.speechSynthesis.getVoices() : [];
-var useSpeech = function(text, opts) {
-    if (opts === void 0) opts = {
-    };
-    var _a = _useSetStateDefault.default({
-        isPlaying: false,
-        lang: opts.lang || 'default',
-        voice: opts.voice || voices[0],
-        rate: opts.rate || 1,
-        pitch: opts.pitch || 1,
-        volume: opts.volume || 1
-    }), state = _a[0], setState = _a[1];
-    var uterranceRef = _react.useRef(null);
-    _useMountDefault.default(function() {
+var Status1;
+(function(Status) {
+    Status[Status["init"] = 0] = "init";
+    Status[Status["play"] = 1] = "play";
+    Status[Status["pause"] = 2] = "pause";
+    Status[Status["end"] = 3] = "end";
+})(Status1 || (Status1 = {
+}));
+var useSpeech = function(text, options) {
+    var mounted = _react.useRef(false);
+    var _a1 = _react.useState(function() {
+        var _a = options.voice || {
+        }, _b = _a.lang, lang = _b === void 0 ? 'default' : _b, _c = _a.name, name = _c === void 0 ? '' : _c;
+        return {
+            isPlaying: false,
+            status: Status1[Status1.init],
+            lang: options.lang || 'default',
+            voiceInfo: {
+                lang: lang,
+                name: name
+            },
+            rate: options.rate || 1,
+            pitch: options.pitch || 1,
+            volume: options.volume || 1
+        };
+    }), state = _a1[0], setState = _a1[1];
+    var handlePlay = _react.useCallback(function() {
+        if (!mounted.current) return;
+        setState(function(preState) {
+            return _tslib.__assign(_tslib.__assign({
+            }, preState), {
+                isPlaying: true,
+                status: Status1[Status1.play]
+            });
+        });
+    }, []);
+    var handlePause = _react.useCallback(function() {
+        if (!mounted.current) return;
+        setState(function(preState) {
+            return _tslib.__assign(_tslib.__assign({
+            }, preState), {
+                isPlaying: false,
+                status: Status1[Status1.pause]
+            });
+        });
+    }, []);
+    var handleEnd = _react.useCallback(function() {
+        if (!mounted.current) return;
+        setState(function(preState) {
+            return _tslib.__assign(_tslib.__assign({
+            }, preState), {
+                isPlaying: false,
+                status: Status1[Status1.end]
+            });
+        });
+    }, []);
+    _react.useEffect(function() {
+        mounted.current = true;
         var utterance = new SpeechSynthesisUtterance(text);
-        opts.lang && (utterance.lang = opts.lang);
-        opts.voice && (utterance.voice = opts.voice);
-        utterance.rate = opts.rate || 1;
-        utterance.pitch = opts.pitch || 1;
-        utterance.volume = opts.volume || 1;
-        utterance.onstart = function() {
-            return setState({
-                isPlaying: true
-            });
+        options.lang && (utterance.lang = options.lang);
+        options.voice && (utterance.voice = options.voice);
+        utterance.rate = options.rate || 1;
+        utterance.pitch = options.pitch || 1;
+        utterance.volume = options.volume || 1;
+        utterance.onstart = handlePlay;
+        utterance.onpause = handlePause;
+        utterance.onresume = handlePlay;
+        utterance.onend = handleEnd;
+        window.speechSynthesis.speak(utterance);
+        return function() {
+            mounted.current = false;
         };
-        utterance.onresume = function() {
-            return setState({
-                isPlaying: true
-            });
-        };
-        utterance.onend = function() {
-            return setState({
-                isPlaying: false
-            });
-        };
-        utterance.onpause = function() {
-            return setState({
-                isPlaying: false
-            });
-        };
-        uterranceRef.current = utterance;
-        window.speechSynthesis.speak(uterranceRef.current);
-    });
+    }, []);
     return state;
 };
 exports.default = useSpeech;
 
-},{"react":"4mchR","./useMount":"k4vVz","./useSetState":"jKWo0","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"iXimU":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","tslib":"j55WF"}],"iXimU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
 var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
+var _util = require("./misc/util");
 var isFocusedElementEditable = function() {
     var activeElement = document.activeElement, body = document.body;
     if (!activeElement) return false;
@@ -30822,22 +30635,22 @@ var useStartTyping = function(onStartTyping) {
         var keydown = function(event) {
             !isFocusedElementEditable() && isTypedCharGood(event) && onStartTyping(event);
         };
-        document.addEventListener('keydown', keydown);
+        _util.on(document, 'keydown', keydown);
         return function() {
-            document.removeEventListener('keydown', keydown);
+            _util.off(document, 'keydown', keydown);
         };
     }, []);
 };
 exports.default = useStartTyping;
 
-},{"./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"4B3iT":[function(require,module,exports) {
+},{"./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"4B3iT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useStateWithHistory", ()=>useStateWithHistory
 );
 var _react = require("react");
 var _useFirstMountState = require("./useFirstMountState");
-var _resolveHookState = require("./util/resolveHookState");
+var _hookState = require("./misc/hookState");
 function useStateWithHistory(initialState, capacity, initialHistory) {
     if (capacity === void 0) capacity = 10;
     if (capacity < 1) throw new Error("Capacity has to be greater than 1, got '" + capacity + "'");
@@ -30858,7 +30671,7 @@ function useStateWithHistory(initialState, capacity, initialHistory) {
     }
     var setState = _react.useCallback(function(newState) {
         innerSetState(function(currentState) {
-            newState = _resolveHookState.resolveHookState(newState);
+            newState = _hookState.resolveHookState(newState, currentState);
             // is state has changed
             if (newState !== currentState) {
                 // if current position is not the last - pop element to the right
@@ -30914,7 +30727,7 @@ function useStateWithHistory(initialState, capacity, initialHistory) {
     ];
 }
 
-},{"react":"4mchR","./useFirstMountState":"6CMvr","./util/resolveHookState":"9neMX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"aYoyE":[function(require,module,exports) {
+},{"react":"4mchR","./useFirstMountState":"6CMvr","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/hookState":"i84Eh"}],"aYoyE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
@@ -31071,7 +30884,7 @@ var DEFAULT_USE_TITLE_OPTIONS = {
 function useTitle(title, options) {
     if (options === void 0) options = DEFAULT_USE_TITLE_OPTIONS;
     var prevTitleRef = _react.useRef(document.title);
-    document.title = title;
+    if (document.title !== title) document.title = title;
     _react.useEffect(function() {
         if (options && options.restoreOnUnmount) return function() {
             document.title = prevTitleRef.current;
@@ -31224,9 +31037,11 @@ exports.easing = {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
+var _useEffectOnce = require("./useEffectOnce");
+var _useEffectOnceDefault = parcelHelpers.interopDefault(_useEffectOnce);
 var useUnmountPromise = function() {
     var refUnmounted = _react.useRef(false);
-    _react.useEffect(function() {
+    _useEffectOnceDefault.default(function() {
         return function() {
             refUnmounted.current = true;
         };
@@ -31250,7 +31065,7 @@ var useUnmountPromise = function() {
 };
 exports.default = useUnmountPromise;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ZGcDv":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./useEffectOnce":"24FnF"}],"ZGcDv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _tslib = require("tslib");
@@ -31275,9 +31090,8 @@ exports.default = useUpsert;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var isVibrationApiSupported = typeof navigator === 'object' && 'vibrate' in navigator;
-var useVibrateMock = function() {
-};
+var _util = require("./misc/util");
+var isVibrationApiSupported = _util.isNavigator && 'vibrate' in navigator;
 function useVibrate(enabled, pattern, loop) {
     if (enabled === void 0) enabled = true;
     if (pattern === void 0) pattern = [
@@ -31308,17 +31122,17 @@ function useVibrate(enabled, pattern, loop) {
         enabled
     ]);
 }
-exports.default = isVibrationApiSupported ? useVibrate : useVibrateMock;
+exports.default = isVibrationApiSupported ? useVibrate : _util.noop;
 
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"kyZUW":[function(require,module,exports) {
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"kyZUW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _createHTMLMediaHook = require("./util/createHTMLMediaHook");
+var _createHTMLMediaHook = require("./factory/createHTMLMediaHook");
 var _createHTMLMediaHookDefault = parcelHelpers.interopDefault(_createHTMLMediaHook);
 var useVideo = _createHTMLMediaHookDefault.default('video');
 exports.default = useVideo;
 
-},{"./util/createHTMLMediaHook":"ke9lv","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"4Tt5c":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./factory/createHTMLMediaHook":"7hha7"}],"4Tt5c":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -31423,58 +31237,68 @@ function useMultiStateValidator(states, validator, initialValidity) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _util = require("./util");
+var _util = require("./misc/util");
 var _useRafState = require("./useRafState");
 var _useRafStateDefault = parcelHelpers.interopDefault(_useRafState);
 var useWindowScroll = function() {
-    var _a = _useRafStateDefault.default({
-        x: _util.isClient ? window.pageXOffset : 0,
-        y: _util.isClient ? window.pageYOffset : 0
-    }), state = _a[0], setState = _a[1];
+    var _a = _useRafStateDefault.default(function() {
+        return {
+            x: _util.isBrowser ? window.pageXOffset : 0,
+            y: _util.isBrowser ? window.pageYOffset : 0
+        };
+    }), state1 = _a[0], setState = _a[1];
     _react.useEffect(function() {
         var handler = function() {
-            setState({
-                x: window.pageXOffset,
-                y: window.pageYOffset
+            setState(function(state) {
+                var pageXOffset = window.pageXOffset, pageYOffset = window.pageYOffset;
+                //Check state for change, return same state if no change happened to prevent rerender
+                //(see useState/setState documentation). useState/setState is used internally in useRafState/setState.
+                return state.x !== pageXOffset || state.y !== pageYOffset ? {
+                    x: pageXOffset,
+                    y: pageYOffset
+                } : state;
             });
         };
-        window.addEventListener('scroll', handler, {
+        //We have to update window scroll at mount, before subscription.
+        //Window scroll may be changed between render and effect handler.
+        handler();
+        _util.on(window, 'scroll', handler, {
             capture: false,
             passive: true
         });
         return function() {
-            window.removeEventListener('scroll', handler);
+            _util.off(window, 'scroll', handler);
         };
     }, []);
-    return state;
+    return state1;
 };
 exports.default = useWindowScroll;
 
-},{"react":"4mchR","./util":"b7OTp","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"bbITl":[function(require,module,exports) {
+},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"bbITl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useRafState = require("./useRafState");
 var _useRafStateDefault = parcelHelpers.interopDefault(_useRafState);
-var _util = require("./util");
+var _util = require("./misc/util");
 var useWindowSize = function(initialWidth, initialHeight) {
     if (initialWidth === void 0) initialWidth = Infinity;
     if (initialHeight === void 0) initialHeight = Infinity;
     var _a = _useRafStateDefault.default({
-        width: _util.isClient ? window.innerWidth : initialWidth,
-        height: _util.isClient ? window.innerHeight : initialHeight
+        width: _util.isBrowser ? window.innerWidth : initialWidth,
+        height: _util.isBrowser ? window.innerHeight : initialHeight
     }), state = _a[0], setState = _a[1];
     _react.useEffect(function() {
-        if (_util.isClient) {
+        if (_util.isBrowser) {
             var handler_1 = function() {
                 setState({
                     width: window.innerWidth,
                     height: window.innerHeight
                 });
             };
-            window.addEventListener('resize', handler_1);
+            _util.on(window, 'resize', handler_1);
             return function() {
-                window.removeEventListener('resize', handler_1);
+                _util.off(window, 'resize', handler_1);
             };
         }
     }, []);
@@ -31482,13 +31306,13 @@ var useWindowSize = function(initialWidth, initialHeight) {
 };
 exports.default = useWindowSize;
 
-},{"react":"4mchR","./useRafState":"GgmUD","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gaPUl":[function(require,module,exports) {
+},{"react":"4mchR","./useRafState":"GgmUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"gaPUl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
 var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
-var _util = require("./util");
+var _util = require("./misc/util");
 var defaultState = {
     x: 0,
     y: 0,
@@ -31499,7 +31323,7 @@ var defaultState = {
     bottom: 0,
     right: 0
 };
-var useMeasure = function() {
+function useMeasure() {
     var _a1 = _react.useState(null), element = _a1[0], ref = _a1[1];
     var _b = _react.useState(defaultState), rect = _b[0], setRect = _b[1];
     var observer = _react.useMemo(function() {
@@ -31532,17 +31356,15 @@ var useMeasure = function() {
         ref,
         rect
     ];
-};
-var useMeasureMock = function() {
+}
+exports.default = _util.isBrowser && typeof window.ResizeObserver !== 'undefined' ? useMeasure : function() {
     return [
-        function() {
-        },
+        _util.noop,
         defaultState
     ];
 };
-exports.default = _util.isClient && !!window.ResizeObserver ? useMeasure : useMeasureMock;
 
-},{"react":"4mchR","./useIsomorphicLayoutEffect":"nDfTQ","./util":"b7OTp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"etwmm":[function(require,module,exports) {
+},{"react":"4mchR","./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"etwmm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "useRendersCount", ()=>useRendersCount
@@ -31609,21 +31431,276 @@ var useSet = function(initialSet) {
 };
 exports.default = useSet;
 
-},{"tslib":"j55WF","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"guDu1":[function(require,module,exports) {
+},{"tslib":"j55WF","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hCE9D":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useHash", ()=>useHash
+);
+var _react = require("react");
+var _useLifecycles = require("./useLifecycles");
+var _useLifecyclesDefault = parcelHelpers.interopDefault(_useLifecycles);
+var _util = require("./misc/util");
+var useHash = function() {
+    var _a = _react.useState(function() {
+        return window.location.hash;
+    }), hash = _a[0], setHash = _a[1];
+    var onHashChange = _react.useCallback(function() {
+        setHash(window.location.hash);
+    }, []);
+    _useLifecyclesDefault.default(function() {
+        _util.on(window, 'hashchange', onHashChange);
+    }, function() {
+        _util.off(window, 'hashchange', onHashChange);
+    });
+    var _setHash = _react.useCallback(function(newHash) {
+        if (newHash !== hash) window.location.hash = newHash;
+    }, [
+        hash
+    ]);
+    return [
+        hash,
+        _setHash
+    ];
+};
+
+},{"react":"4mchR","./useLifecycles":"8cTRX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./misc/util":"8mpFk"}],"l1b1k":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var createMemo = function(fn) {
+    return function() {
+        var args = [];
+        for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
+        return _react.useMemo(function() {
+            return fn.apply(void 0, args);
+        }, args);
+    };
+};
+exports.default = createMemo;
+
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"gozfP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var createReducerContext = function(reducer, defaultInitialState) {
+    var context = _react.createContext(undefined);
+    var providerFactory = function(props, children) {
+        return _react.createElement(context.Provider, props, children);
+    };
+    var ReducerProvider = function(_a) {
+        var children = _a.children, initialState = _a.initialState;
+        var state = _react.useReducer(reducer, initialState !== undefined ? initialState : defaultInitialState);
+        return providerFactory({
+            value: state
+        }, children);
+    };
+    var useReducerContext = function() {
+        var state = _react.useContext(context);
+        if (state == null) throw new Error("useReducerContext must be used inside a ReducerProvider.");
+        return state;
+    };
+    return [
+        useReducerContext,
+        ReducerProvider,
+        context
+    ];
+};
+exports.default = createReducerContext;
+
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"88549":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _useUpdateEffect = require("../useUpdateEffect");
+var _useUpdateEffectDefault = parcelHelpers.interopDefault(_useUpdateEffect);
+function composeMiddleware(chain) {
+    return function(context, dispatch) {
+        return chain.reduceRight(function(res, middleware) {
+            return middleware(context)(res);
+        }, dispatch);
+    };
+}
+var createReducer = function() {
+    var middlewares = [];
+    for(var _i1 = 0; _i1 < arguments.length; _i1++)middlewares[_i1] = arguments[_i1];
+    var composedMiddleware = composeMiddleware(middlewares);
+    return function(reducer, initialState, initializer) {
+        if (initializer === void 0) initializer = function(value) {
+            return value;
+        };
+        var ref = _react.useRef(initializer(initialState));
+        var _a = _react.useState(ref.current), setState = _a[1];
+        var dispatch = _react.useCallback(function(action) {
+            ref.current = reducer(ref.current, action);
+            setState(ref.current);
+            return action;
+        }, [
+            reducer
+        ]);
+        var dispatchRef = _react.useRef(composedMiddleware({
+            getState: function() {
+                return ref.current;
+            },
+            dispatch: function() {
+                var args = [];
+                for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
+                return dispatchRef.current.apply(dispatchRef, args);
+            }
+        }, dispatch));
+        _useUpdateEffectDefault.default(function() {
+            dispatchRef.current = composedMiddleware({
+                getState: function() {
+                    return ref.current;
+                },
+                dispatch: function() {
+                    var args = [];
+                    for(var _i = 0; _i < arguments.length; _i++)args[_i] = arguments[_i];
+                    return dispatchRef.current.apply(dispatchRef, args);
+                }
+            }, dispatch);
+        }, [
+            dispatch
+        ]);
+        return [
+            ref.current,
+            dispatchRef.current
+        ];
+    };
+};
+exports.default = createReducer;
+
+},{"react":"4mchR","../useUpdateEffect":"831mN","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"eWLsz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var createStateContext = function(defaultInitialValue) {
+    var context = _react.createContext(undefined);
+    var providerFactory = function(props, children) {
+        return _react.createElement(context.Provider, props, children);
+    };
+    var StateProvider = function(_a) {
+        var children = _a.children, initialValue = _a.initialValue;
+        var state = _react.useState(initialValue !== undefined ? initialValue : defaultInitialValue);
+        return providerFactory({
+            value: state
+        }, children);
+    };
+    var useStateContext = function() {
+        var state = _react.useContext(context);
+        if (state == null) throw new Error("useStateContext must be used inside a StateProvider.");
+        return state;
+    };
+    return [
+        useStateContext,
+        StateProvider,
+        context
+    ];
+};
+exports.default = createStateContext;
+
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7Adt3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _util = require("../misc/util");
+var createBreakpoint = function(breakpoints) {
+    if (breakpoints === void 0) breakpoints = {
+        laptopL: 1440,
+        laptop: 1024,
+        tablet: 768
+    };
+    return function() {
+        var _a1 = _react.useState(_util.isBrowser ? window.innerWidth : 0), screen = _a1[0], setScreen = _a1[1];
+        _react.useEffect(function() {
+            var setSideScreen = function() {
+                setScreen(window.innerWidth);
+            };
+            setSideScreen();
+            _util.on(window, 'resize', setSideScreen);
+            return function() {
+                _util.off(window, 'resize', setSideScreen);
+            };
+        });
+        var sortedBreakpoints = _react.useMemo(function() {
+            return Object.entries(breakpoints).sort(function(a, b) {
+                return a[1] >= b[1] ? 1 : -1;
+            });
+        }, [
+            breakpoints
+        ]);
+        var result = sortedBreakpoints.reduce(function(acc, _a) {
+            var name = _a[0], width = _a[1];
+            if (screen >= width) return name;
+            else return acc;
+        }, sortedBreakpoints[0][0]);
+        return result;
+    };
+};
+exports.default = createBreakpoint;
+
+},{"react":"4mchR","../misc/util":"8mpFk","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7Bm8m":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _util = require("./misc/util");
+var nav = _util.isNavigator ? navigator : undefined;
+var conn = nav && (nav.connection || nav.mozConnection || nav.webkitConnection);
+function getConnectionState(previousState) {
+    var online = nav === null || nav === void 0 ? void 0 : nav.onLine;
+    var previousOnline = previousState === null || previousState === void 0 ? void 0 : previousState.online;
+    return {
+        online: online,
+        previous: previousOnline,
+        since: online !== previousOnline ? new Date() : previousState === null || previousState === void 0 ? void 0 : previousState.since,
+        downlink: conn === null || conn === void 0 ? void 0 : conn.downlink,
+        downlinkMax: conn === null || conn === void 0 ? void 0 : conn.downlinkMax,
+        effectiveType: conn === null || conn === void 0 ? void 0 : conn.effectiveType,
+        rtt: conn === null || conn === void 0 ? void 0 : conn.rtt,
+        saveData: conn === null || conn === void 0 ? void 0 : conn.saveData,
+        type: conn === null || conn === void 0 ? void 0 : conn.type
+    };
+}
+function useNetworkState(initialState) {
+    var _a = _react.useState(initialState !== null && initialState !== void 0 ? initialState : getConnectionState), state = _a[0], setState = _a[1];
+    _react.useEffect(function() {
+        var handleStateChange = function() {
+            setState(getConnectionState);
+        };
+        _util.on(window, 'online', handleStateChange, {
+            passive: true
+        });
+        _util.on(window, 'offline', handleStateChange, {
+            passive: true
+        });
+        if (conn) _util.on(conn, 'change', handleStateChange, {
+            passive: true
+        });
+        return function() {
+            _util.off(window, 'online', handleStateChange);
+            _util.off(window, 'offline', handleStateChange);
+            if (conn) _util.off(conn, 'change', handleStateChange);
+        };
+    }, []);
+    return state;
+}
+exports.default = useNetworkState;
+
+},{"react":"4mchR","./misc/util":"8mpFk","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"3yd99":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "createGlobalState", ()=>createGlobalState
 );
 var _react = require("react");
-var _useEffectOnce = require("./useEffectOnce");
+var _hookState = require("../misc/hookState");
+var _useEffectOnce = require("../useEffectOnce");
 var _useEffectOnceDefault = parcelHelpers.interopDefault(_useEffectOnce);
-var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
+var _useIsomorphicLayoutEffect = require("../useIsomorphicLayoutEffect");
 var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
 function createGlobalState(initialState) {
     var store = {
-        state: initialState,
-        setState: function(state) {
-            store.state = state;
+        state: initialState instanceof Function ? initialState() : initialState,
+        setState: function(nextState) {
+            store.state = _hookState.resolveHookState(nextState, store.state);
             store.setters.forEach(function(setter) {
                 return setter(store.state);
             });
@@ -31650,38 +31727,7 @@ function createGlobalState(initialState) {
 }
 exports.default = createGlobalState;
 
-},{"react":"4mchR","./useEffectOnce":"24FnF","./useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hCE9D":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "useHash", ()=>useHash
-);
-var _react = require("react");
-var _useLifecycles = require("./useLifecycles");
-var _useLifecyclesDefault = parcelHelpers.interopDefault(_useLifecycles);
-var useHash = function() {
-    var _a = _react.useState(function() {
-        return window.location.hash;
-    }), hash = _a[0], setHash = _a[1];
-    var onHashChange = _react.useCallback(function() {
-        setHash(window.location.hash);
-    }, []);
-    _useLifecyclesDefault.default(function() {
-        window.addEventListener('hashchange', onHashChange);
-    }, function() {
-        window.removeEventListener('hashchange', onHashChange);
-    });
-    var _setHash = _react.useCallback(function(newHash) {
-        if (newHash !== hash) window.location.hash = newHash;
-    }, [
-        hash
-    ]);
-    return [
-        hash,
-        _setHash
-    ];
-};
-
-},{"react":"4mchR","./useLifecycles":"8cTRX","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"kjRWj":[function(require,module,exports) {
+},{"react":"4mchR","../misc/hookState":"i84Eh","../useEffectOnce":"24FnF","../useIsomorphicLayoutEffect":"nDfTQ","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"kjRWj":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>_buttonDefault.default
