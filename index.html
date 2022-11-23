@@ -26,12 +26,22 @@
     <title>xantiagoma | Santiago Montoya Angarita</title>
     
     
-    <script type="module" crossorigin src="/assets/index.66c7d93e.js"></script>
-    <link rel="stylesheet" href="/assets/index.95db2202.css">
+    <script type="module" crossorigin src="/assets/index.ca94b881.js"></script>
+    <link rel="stylesheet" href="/assets/index.11daaa9e.css">
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <main id="root"></main>
   </body>
+
+  <script>
+    ;(async function() {
+      if (CSS['paintWorklet'] === undefined) {
+        await import('https://unpkg.com/css-paint-polyfill@next/dist/css-paint-polyfill.js')
+      }
+      CSS.paintWorklet.addModule('https://unpkg.com/curved-line@1.0.0/curved-line.js');
+      CSS.paintWorklet.addModule('https://cdn.jsdelivr.net/gh/malchata/paintlets/src/client/worklets/circuits.min.js');
+    })()
+  </script>
 </html>
