@@ -27,11 +27,11 @@
       xantiagoma
     </span>
   </a>
-  <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="2tIBeJ" component-url="/ThemeSelector.3278c080.js" component-export="default" renderer-url="/client.b585d4f5.js" props="{&quot;className&quot;:[0,&quot;ml-auto print:hidden&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;ThemeSelector&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island>
+  <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="2tIBeJ" component-url="/ThemeSelector.d54cda66.js" component-export="default" renderer-url="/client.96aa66df.js" props="{&quot;className&quot;:[0,&quot;ml-auto print:hidden&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;ThemeSelector&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
 </nav>
     <main>
       <header class="hero rounded-b-2xl overflow-hidden isolate min-h-screen print:inline relative">
-  <astro-island uid="Ow7T5" component-url="/Mapa.acddc32b.js" component-export="default" renderer-url="/client.b585d4f5.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;Mapa&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island>
+  <astro-island uid="Ow7T5" component-url="/Mapa.191af786.js" component-export="default" renderer-url="/client.96aa66df.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;Mapa&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
   <div class="flex px-4 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10 print:px-0 print:static print:items-center print:justify-center">
     <div class="flex flex-col container mx-auto justify-center print:w-full print:m-0">
       <p class="text-2xl sm:text-4xl lg:text-6xl mt-auto">
@@ -45,7 +45,7 @@
         Software Developer / Web Engineer
       </p>
       <p class="flex items-center mt-2 text-xl text-gray-400 opacity-50 print:mt-0 print:opacity-100 print:text-black">
-        <svg class="text-primary fill-current w-4 h-4 mr-1" style="display:inline"><use xlink:href="/icons.svg#map-maker"></use></svg>
+        <svg style="display: inline;" class="text-primary fill-current w-4 h-4 mr-1"><use xlink:href="/icons.svg#map-maker"></use></svg>
         Medellín,
         <svg class="mx-1 w-6 h-6 inline"><use xlink:href="/icons.svg#flag-co"></use></svg>
         <span class="sr-only">Colombia</span>.
@@ -97,28 +97,28 @@
     <h2 class="text-4xl pl-8 pt-8 print:px-0 print:pt-4 print:pb-2">
       <span class="section-title">What I do?</span>
     </h2>
-    <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0" tabindex="0"><article>
+    <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0"><article>
                 <svg role="presentation" class="bg-gradient-to-tr from-blue-700 to-blue-900 rounded-2xl shadow-lg p-6 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#web"></use></svg>
 
                 <h3 class="text-lg mt-2">Web Development</h3>
-              </article></li><li class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0" tabindex="0"><article>
+              </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0"><article>
                 <svg role="presentation" class="bg-gradient-to-tr from-green-700 to-green-900 rounded-2xl shadow-lg p-6 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#desktop-mobile"></use></svg>
 
                 <h3 class="text-lg mt-2">Software Development</h3>
-              </article></li><li class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0" tabindex="0"><article>
+              </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0"><article>
                 <svg role="presentation" class="bg-gradient-to-tr from-red-700 to-red-900 rounded-2xl shadow-lg p-6 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#cellphone"></use></svg>
 
                 <h3 class="text-lg mt-2">Mobile Apps</h3>
-              </article></li><li class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0" tabindex="0"><article>
+              </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-7-12 md:flex-4-9 lg:flex-4-11 xl:flex-3-10 2xl:flex-2-9 max-w-sm print:p-0"><article>
                 <svg role="presentation" class="bg-gradient-to-tr from-purple-700 to-purple-900 rounded-2xl shadow-lg p-6 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#monitor-cellphone-star"></use></svg>
 
                 <h3 class="text-lg mt-2">Custom Development</h3>
-              </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+              </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
   </section><section class="print:text-black">
     <h2 class="text-4xl pl-8 pt-8 print:px-0 print:pt-4 print:pb-2" id="experience">
       <span class="section-title">Work Experience</span>
     </h2>
-    <div class="container mx-auto w-full h-full text-gray-600 dark:text-gray-400 p-8 print:p-0 print:text-black"><div class="relative wrap overflow-hidden h-full"><div class="border-2-2 absolute border-opacity-20 border-gray-900 dark:border-gray-500 h-full border hidden lg:block" style="left:50%"></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 hidden lg:flex print:hidden"><div class="order-1 lg:w-5/12"></div><div data-text="Future" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex bg-gray-800 justify-center text-gray-400"><svg class="fill-current w-2/3 p-1" role="img" aria-label="Future"><use xlink:href="/icons.svg#logo"></use></svg><p class="lg:sr-only">Future</p></div><em class="mb-4 flex lg:hidden print:mb-0">Future</em><div class="order-1 lg:w-5/12"></div></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2022 - Today" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-skillshareDark dark:bg-skillshare"><h1 class="mx-auto font-semibold text-lg text-skillshare dark:text-skillshareDark">S</h1><p class="lg:sr-only">2022 - Today</p></div><em class="mb-4 flex lg:hidden print:mb-0">2022 - Today</em><div class="order-1 lg:w-5/12"><a href="https://www.skillshare.com/about" target="_blank" rel="noopener noreferrer"><svg class="fill-current h-24 max-w-full print:h-12" role="img" aria-label="Skillshare"><use xlink:href="/icons.svg#skillshare"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-skillshareDark dark:text-skillshare print:text-black print:dark:text-black">Senior Frontend Engineer</h3><p>Skillshare is an online learning community with thousands of classes for creative and curious people, on topics including illustration, design, photography, video, freelancing, and more. On Skillshare, members come together to find inspiration and take the next step in their creative journey.</p></div></div><div class="timeline-row mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2019 - 2022" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--left bg-huge"><h1 class="mx-auto font-semibold text-lg text-white">H</h1><p class="lg:sr-only">2019 - 2022</p></div><em class="mb-4 flex lg:hidden print:mb-0">2019 - 2022</em><div class="order-1 lg:w-5/12"><a href="https://www.hugeinc.com/us" target="_blank" rel="noopener noreferrer"><svg class="fill-current h-16 max-w-full print:h-8" role="img" aria-label="HUGE"><use xlink:href="/icons.svg#huge"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-huge print:text-black">Senior Web Engineer <sup>(M3+)</sup></h3><p>Huge is an experience design and digital marketing agency. A global collective of designers, technologists and strategists. The company was founded in DUMBO, Brooklyn.</p></div></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2017 - 2019" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-globant"><h1 class="mx-auto font-semibold text-lg text-white">G</h1><p class="lg:sr-only">2017 - 2019</p></div><em class="mb-4 flex lg:hidden print:mb-0">2017 - 2019</em><div class="order-1 lg:w-5/12"><a href="https://www.globant.com/about" target="_blank" rel="noopener noreferrer"><svg class="fill-current h-16 max-w-full print:h-8" role="img" aria-label="Globant"><use xlink:href="/icons.svg#globant"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-globant print:text-black">Web UI Developer <sup>(SSr Advanced)</sup></h3><p>Globant is an IT and Software Development company operating in Argentina, Colombia, Uruguay, the United Kingdom, Brazil, the United States, Peru, India, Mexico, Chile, Spain, Romania and Belarus.</p></div></div><div class="timeline-row mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2016 - 2017" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--left bg-demandfrontier"><h1 class="mx-auto font-semibold text-lg text-white">D</h1><p class="lg:sr-only">2016 - 2017</p></div><em class="mb-4 flex lg:hidden print:mb-0">2016 - 2017</em><div class="order-1 lg:w-5/12"><a href="https://demandfrontier.com/our-story" target="_blank" rel="noopener noreferrer"><svg class="fill-current h-16 max-w-full print:h-8" role="img" aria-label="Demand Frontier"><use xlink:href="/icons.svg#demand-frontier"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-demandfrontier print:text-black">Web Developer &amp; Marketing Automation</h3><p>Demand Frontier is a digital marketing agency specializing in B2B demand generation for the global enterprise</p></div></div><div class="timeline-row timeline-row--left mb-0 lg:mb-32 print:text-black"><div class="order-1 lg:w-5/12"></div><div data-text="2015 - 2016" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-eafit"><h1 class="mx-auto font-semibold text-lg text-white">E</h1><p class="lg:sr-only">2015 - 2016</p></div><em class="mb-4 flex lg:hidden print:mb-0">2015 - 2016</em><div class="order-1 lg:w-5/12"><a href="https://www.eafit.edu.co/international/eng/Paginas/eng.aspx" target="_blank" rel="noopener noreferrer"><svg class="fill-current h-16 max-w-full print:h-8" role="img" aria-label="Universidad EAFIT"><use xlink:href="/icons.svg#eafit"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-eafitText print:text-black">Teacher Assistant<!-- --> <small>(Programming Languages, Programming Fundamentals)</small></h3><p>Colombian university located in Medellín offering 23 undergraduate programs, 70 specializations, 34 masters, and six doctoral programs.</p></div></div><div class="timeline-row hidden lg:flex print:hidden"><div class="order-1 lg:w-5/12"></div><div data-text="Born" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex bg-gray-800 justify-center text-yellow-300"><svg class="fill-current w-2/3 p-1" role="img" aria-label="Born"><use xlink:href="/icons.svg#star"></use></svg><p class="lg:sr-only">Born</p></div><em class="mb-4 flex lg:hidden print:mb-0">Born</em><div class="order-1 lg:w-5/12"></div></div></div></div>
+    <div class="container mx-auto w-full h-full text-gray-600 dark:text-gray-400 p-8 print:p-0 print:text-black"><div class="relative wrap overflow-hidden h-full"><div style="left: 50%;" class="border-2-2 absolute border-opacity-20 border-gray-900 dark:border-gray-500 h-full border hidden lg:block"></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 hidden lg:flex print:hidden"><div class="order-1 lg:w-5/12"></div><div data-text="Future" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex bg-gray-800 justify-center text-gray-400"><svg role="img" aria-label="Future" class="fill-current w-2/3 p-1"><use xlink:href="/icons.svg#logo"></use></svg><p class="lg:sr-only">Future</p></div><em class="mb-4 flex lg:hidden print:mb-0">Future</em><div class="order-1 lg:w-5/12"></div></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2022 - Today" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-skillshareDark dark:bg-skillshare"><h1 class="mx-auto font-semibold text-lg text-skillshare dark:text-skillshareDark">S</h1><p class="lg:sr-only">2022 - Today</p></div><em class="mb-4 flex lg:hidden print:mb-0">2022 - Today</em><div class="order-1 lg:w-5/12"><a href="https://www.skillshare.com/about" target="_blank" rel="noopener noreferrer"><svg role="img" aria-label="Skillshare" class="fill-current h-24 max-w-full print:h-12"><use xlink:href="/icons.svg#skillshare"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-skillshareDark dark:text-skillshare print:text-black print:dark:text-black">Senior Frontend Engineer</h3><p>Skillshare is an online learning community with thousands of classes for creative and curious people, on topics including illustration, design, photography, video, freelancing, and more. On Skillshare, members come together to find inspiration and take the next step in their creative journey.</p></div></div><div class="timeline-row mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2019 - 2022" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--left bg-huge"><h1 class="mx-auto font-semibold text-lg text-white">H</h1><p class="lg:sr-only">2019 - 2022</p></div><em class="mb-4 flex lg:hidden print:mb-0">2019 - 2022</em><div class="order-1 lg:w-5/12"><a href="https://www.hugeinc.com/us" target="_blank" rel="noopener noreferrer"><svg role="img" aria-label="HUGE" class="fill-current h-16 max-w-full print:h-8"><use xlink:href="/icons.svg#huge"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-huge print:text-black">Senior Web Engineer <sup>(M3+)</sup></h3><p>Huge is an experience design and digital marketing agency. A global collective of designers, technologists and strategists. The company was founded in DUMBO, Brooklyn.</p></div></div><div class="timeline-row timeline-row--left mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2017 - 2019" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-globant"><h1 class="mx-auto font-semibold text-lg text-white">G</h1><p class="lg:sr-only">2017 - 2019</p></div><em class="mb-4 flex lg:hidden print:mb-0">2017 - 2019</em><div class="order-1 lg:w-5/12"><a href="https://www.globant.com/about" target="_blank" rel="noopener noreferrer"><svg role="img" aria-label="Globant" class="fill-current h-16 max-w-full print:h-8"><use xlink:href="/icons.svg#globant"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-globant print:text-black">Web UI Developer <sup>(SSr Advanced)</sup></h3><p>Globant is an IT and Software Development company operating in Argentina, Colombia, Uruguay, the United Kingdom, Brazil, the United States, Peru, India, Mexico, Chile, Spain, Romania and Belarus.</p></div></div><div class="timeline-row mb-16 lg:mb-32 print:text-black print:mb-8"><div class="order-1 lg:w-5/12"></div><div data-text="2016 - 2017" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--left bg-demandfrontier"><h1 class="mx-auto font-semibold text-lg text-white">D</h1><p class="lg:sr-only">2016 - 2017</p></div><em class="mb-4 flex lg:hidden print:mb-0">2016 - 2017</em><div class="order-1 lg:w-5/12"><a href="https://demandfrontier.com/our-story" target="_blank" rel="noopener noreferrer"><svg role="img" aria-label="Demand Frontier" class="fill-current h-16 max-w-full print:h-8"><use xlink:href="/icons.svg#demand-frontier"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-demandfrontier print:text-black">Web Developer &amp; Marketing Automation</h3><p>Demand Frontier is a digital marketing agency specializing in B2B demand generation for the global enterprise</p></div></div><div class="timeline-row timeline-row--left mb-0 lg:mb-32 print:text-black"><div class="order-1 lg:w-5/12"></div><div data-text="2015 - 2016" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex timeline-chip--right bg-eafit"><h1 class="mx-auto font-semibold text-lg text-white">E</h1><p class="lg:sr-only">2015 - 2016</p></div><em class="mb-4 flex lg:hidden print:mb-0">2015 - 2016</em><div class="order-1 lg:w-5/12"><a href="https://www.eafit.edu.co/international/eng/Paginas/eng.aspx" target="_blank" rel="noopener noreferrer"><svg role="img" aria-label="Universidad EAFIT" class="fill-current h-16 max-w-full print:h-8"><use xlink:href="/icons.svg#eafit"></use></svg></a><h3 class="font-bold text-xl mt-2 print:mt-0 text-eafitText print:text-black">Teacher Assistant <small>(Programming Languages, Programming Fundamentals)</small></h3><p>Colombian university located in Medellín offering 23 undergraduate programs, 70 specializations, 34 masters, and six doctoral programs.</p></div></div><div class="timeline-row hidden lg:flex print:hidden"><div class="order-1 lg:w-5/12"></div><div data-text="Born" class="items-center order-1 shadow-xl w-8 h-8 rounded-full timeline-chip select-none hidden lg:flex bg-gray-800 justify-center text-yellow-300"><svg role="img" aria-label="Born" class="fill-current w-2/3 p-1"><use xlink:href="/icons.svg#star"></use></svg><p class="lg:sr-only">Born</p></div><em class="mb-4 flex lg:hidden print:mb-0">Born</em><div class="order-1 lg:w-5/12"></div></div></div></div>
   </section><section class="pb-8 print:text-black">
     <h2 class="text-4xl pl-8 pt-8 print:px-0 print:pt-4 print:pb-2">
       <span class="section-title">Skills</span>
@@ -127,392 +127,392 @@
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Languages
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-yellow-400 via-yellow-600 to-yellow-600 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#node-js"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       JavaScript / Node.js / TypeScript
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-teal-400 to-blue-500 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#dart"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Dart
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-blue-600 to-yellow-500 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#python"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Python
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-teal-500 to-blue-600 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#go"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Go
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-blue-600 via-red-600 to-orange-500 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#kotlin"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Kotlin / Java
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-indigo-800 to-indigo-500 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#php"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       PHP
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tr from-green-900 to-black rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#bash"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Bash
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               UI Frameworks
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-cyan-600 to-cyan-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#react"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       React
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-emerald-600 to-emerald-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#vue"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Vue
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-sky-600 to-sky-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#flutter"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Flutter
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-red-600 to-red-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#angular"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Angular
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-blue-600 to-blue-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#ionic"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Ionic
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               UI Libraries
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-teal-400 to-teal-600 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#chakra"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Chakra UI &amp; StyledComponents
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-teal-600 to-teal-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#tailwind"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       TailwindCSS
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-violet-600 to-violet-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#bootstrap"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Bootstrap
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-blue-600 to-red-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#ant-design"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Ant Design
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-sky-600 to-blue-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#material-ui"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       MaterialUI
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-cyan-600 to-cyan-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#foundation"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Foundation
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-teal-600 to-teal-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#bulma"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Bulma
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-sky-600 to-sky-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#element"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       ElementUI
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Data
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-slate-600 to-slate-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#rest"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       REST
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-pink-600 to-pink-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#graphql"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       GraphQL
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-blue-700 via-blue-900 to-blue-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#postgresql"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       PostgreSQL
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-green-600 to-green-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#mongodb"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       MongoDB
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-yellow-800 to-blue-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#mysql"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       MySQL / MariaDB
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-cyan-700 via-cyan-900 to-cyan-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#rethinkdb"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       RethinkDB
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-red-700 via-red-900 to-red-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#couchdb"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       CouchDB
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-rose-700 via-rose-900 to-rose-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#redis"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Redis
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Backend Frameworks
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-blue-700 via-blue-900 to-blue-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#express"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Express.js / Koa / Hapi / Fastify / Restify
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-yellow-700 via-yellow-900 to-yellow-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#flask"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       FastAPI / Flask / Tornado / Bottle
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-indigo-700 via-indigo-900 to-indigo-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#golang"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Gin / Revel / Beego / FastHTTP / Martini / Gorilla / Mux
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-red-700 via-red-900 to-red-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#laravel"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Laravel / Lumen
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-green-700 via-green-900 to-green-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#java"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Spring Boot / Spark / Vert.X / Jooby
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Other
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-slate-700 via-slate-900 to-slate-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#nextjs"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Next.js
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-amber-700 via-amber-900 to-amber-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#html"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       HTML
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-sky-700 via-sky-900 to-sky-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#sass"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       CSS / SASS / PostCSS
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-yellow-700 via-yellow-900 to-yellow-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#json"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       JSON
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-green-500 to-green-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#nuxt"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Nuxt.js
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-purple-500 via-purple-900 to-purple-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#gatsby"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Gatsby
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-gray-500 via-gray-700 to-gray-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#pwa"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       PWA
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Tools
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-gray-500 via-gray-700 to-gray-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#git"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Git
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-yellow-500 via-yellow-700 to-yellow-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#sketch"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Sketch / Figma
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-blue-500 via-blue-700 to-blue-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#adobe"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Photoshop / Illustrator
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-orange-500 via-orange-700 to-orange-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#drive"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Office / Drive
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-bl from-sky-500 via-sky-700 to-sky-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#atlassian"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       JIRA
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               DevOps, OS &amp; WebServers
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-yellow-500 via-yellow-700 to-yellow-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#linux"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Linux
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-sky-500 via-sky-700 to-sky-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#docker"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Docker
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-teal-500 via-teal-700 to-teal-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#nginx"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       NGINX
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-stone-500 via-stone-700 to-stone-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#ci-cd"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       CI/CD
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-slate-500 via-slate-700 to-slate-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#apple"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Mac
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-orange-500 via-red-700 to-red-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#apache"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Apache
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-red-500 via-rose-700 to-rose-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#raspberry-pi"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Raspberry Pi
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-green-500 via-cyan-700 to-cyan-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#caddy"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Caddy
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               CMSs
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-purple-500 via-purple-900 to-purple-900 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#strapi"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Strapi
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-blue-700 to-red-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#contentful"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Contentful
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-yellow-500 to-yellow-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#firebase"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Firebase
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-slate-900 to-black rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#directus"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Directus
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-sky-700 to-cyan-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#wordpress"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Wordpress
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-black to-gray-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#graphcms"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       GraphCMS
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-blue-700 to-sky-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#parse"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Parse Server
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-neutral-800 to-black rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#cockpit"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Cockpit
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-black to-stone-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#wagtail"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Wagtail
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-yellow-700 via-blue-700 to-red-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#prismic"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Prismic
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section><section>
             <h3 class="text-3xl ml-8 mt-8 pl-4 border-l-4 border-red-700 print:p-0 print:mt-2 print:ml-0 print:border-none">
               Learning
             </h3>
-            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+            <ul class="snap-carousel print:overflow-x-auto print:overflow-y-auto print:flex-wrap"><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-indigo-500 via-indigo-700 to-indigo-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#cloud"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Cloud
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-red-500 via-orange-700 to-orange-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#rust"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Rust
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-black to-purple-600 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#elixir"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Elixir
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-blue-500 via-blue-700 to-blue-700 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#kubernetes"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Kubernetes
                     </h3>
-                  </article></li><li class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0" tabindex="0"><article>
+                  </article></li><li tabIndex="0" class="snap-slide py-8 pl-8 flex-4-7 md:flex-4-11 lg:flex-3-11 xl:flex-2-9 2xl:flex-2-11 skill-slide max-w-xs print:p-0"><article>
                     <svg role="presentation" class="bg-gradient-to-tl from-fuchsia-900  via-gray-900 to-purple-800 rounded-2xl shadow-lg p-2 md:p-4 lg:p-6 xl:p-8 aspect-video print:hidden h-auto mx-auto fill-current text-white text-opacity-40 max-w-full"><use xlink:href="/icons.svg#haskell"></use></svg>
                     <h3 class="text-lg mt-2 border-l-4 border-red-700 pl-4 border-opacity-30 print:border-none">
                       Haskell
                     </h3>
-                  </article></li><li class="snap-slide pl-8 print:hidden" tabindex="0"></li></ul>
+                  </article></li><li tabIndex="0" class="snap-slide pl-8 print:hidden"></li></ul>
           </section>
   </section>
     </main>
@@ -523,7 +523,7 @@
       <br class="sm:hidden">
       Santiago Montoya Angarita <br>
       <small class="opacity-40">
-        Last updated: 2022/11/29 23:01:55.506 UTC
+        Last updated: 2022/11/30 00:53:28.201 UTC
       </small>
     </p>
     <a href="https://drive.google.com/file/d/0B_LGcUgpukYrWURiVW5wNnFGT28/view?usp=sharing&resourcekey=0-SJO19BC7LGp2fBJodPmKSw" target="_blank" rel="noopener noreferrer" class="bg-black text-white w-7 h-7 inline-flex justify-center items-center font-bold rounded-md text-sm dark:bg-white dark:text-black transition duration-150" aria-label="Resume / CV">
